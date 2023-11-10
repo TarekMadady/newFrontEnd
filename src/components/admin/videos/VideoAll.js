@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, {
+  useEffect,
+  useState
+} from "react";
 import VideoCard from "../../UI/videos/VideoCard";
 
 const VideoAll = () => {
@@ -8,7 +11,7 @@ const VideoAll = () => {
     getAllVideo();
   }, []);
   const getAllVideo = async () => {
-    const respons = await fetch("http://localhost:8000/admin/video/all", {
+    const respons = await fetch("https://tutorialbackend.onrender.com/admin/video/all", {
       method: "GET",
       headers: {
         Authorization: `${token}`,
@@ -17,22 +20,32 @@ const VideoAll = () => {
     const Data = await respons.json();
     setVideos(Data);
   };
-  return (
-    <>
-      {videos.length > 0 ? (
-        videos.map((vido) => (
-          <VideoCard
-            key={vido._id}
-            videoTitle={vido.videoTitle}
-            videoLength={vido.videoLength}
-            url={vido.videoFile}
-            id={vido._id}
+  return ( <
+    > {
+      videos.length > 0 ? (
+        videos.map((vido) => ( <
+          VideoCard key = {
+            vido._id
+          }
+          videoTitle = {
+            vido.videoTitle
+          }
+          videoLength = {
+            vido.videoLength
+          }
+          url = {
+            vido.videoFile
+          }
+          id = {
+            vido._id
+          }
           />
         ))
-      ) : (
-        <div>No Video</div>
-      )}
-    </>
+      ) : ( <
+        div > No Video < /div>
+      )
+    } <
+    />
   );
 };
 

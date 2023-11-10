@@ -1,5 +1,10 @@
-import React, { useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import React, {
+  useState,
+  useRef
+} from "react";
+import {
+  useNavigate
+} from "react-router-dom";
 import GetVideo from "./GetVideo";
 
 const QuestionAdd = (props) => {
@@ -10,6 +15,7 @@ const QuestionAdd = (props) => {
   // let exid;
 
   let vide = null;
+
   function videoid(id) {
     vide = id;
   }
@@ -37,13 +43,13 @@ const QuestionAdd = (props) => {
     formData.append("degree", qDegree.current.value);
     formData.append("video", vide);
 
-    fetch(`http://localhost:8000/admin/question/add/${props.exid}`, {
-      method: "POST",
-      body: formData,
-      headers: {
-        Authorization: `${token}`,
-      },
-    })
+    fetch(`https://tutorialbackend.onrender.com/admin/question/add/${props.exid}`, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Authorization: `${token}`,
+        },
+      })
       .then((response) => {
         return response.json();
       })
@@ -55,65 +61,106 @@ const QuestionAdd = (props) => {
       });
   }
 
-  return (
-    <>
-      <form onSubmit={submitQuestionForm}>
-        <div className="mb-3">{/* <GetExam examID={examID} /> */}</div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="questTitle">
-            السؤال
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="questTitle"
-            ref={Qtitle}
-          />
-        </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="qimage">
-            صورة للسؤال
-          </label>
-          <input type="file" ref={inputRef} onChange={HandleImageChange} />
-          {image ? (
-            <img
-              src={URL.createObjectURL(image)}
-              alt=""
-              style={{ width: "40px", height: "40px", borderRadius: "50%" }}
-            />
-          ) : (
-            <img src="" alt="" />
-          )}
-        </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="questType">
-            نوع الاجابة
-          </label>
-          <select className="form-control" id="questType" ref={Qtype}>
-            <option value="0">اختر نوع الجابة</option>
-            <option value="single">Single</option>
-            <option value="multiChoice">Multi choice</option>
-          </select>
-        </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="questDegree">
-            درجة السؤال
-          </label>
-          <input
-            type="number"
-            id="questDegree"
-            className="form-control"
-            ref={qDegree}
-          />
-        </div>
-        <div className="mb-3">
-          <GetVideo vid={videoid} />
-        </div>
-        <button type="submit" className="btn btn-success">
-          اضافةالسؤال
-        </button>
-      </form>
-    </>
+  return ( <
+    >
+    <
+    form onSubmit = {
+      submitQuestionForm
+    } >
+    <
+    div className = "mb-3" > {
+      /* <GetExam examID={examID} /> */ } < /div> <
+    div className = "mb-3" >
+    <
+    label className = "form-label"
+    htmlFor = "questTitle" >
+    السؤال <
+    /label> <
+    input type = "text"
+    className = "form-control"
+    id = "questTitle"
+    ref = {
+      Qtitle
+    }
+    /> <
+    /div> <
+    div className = "mb-3" >
+    <
+    label className = "form-label"
+    htmlFor = "qimage" >
+    صورة للسؤال <
+    /label> <
+    input type = "file"
+    ref = {
+      inputRef
+    }
+    onChange = {
+      HandleImageChange
+    }
+    /> {
+      image ? ( <
+        img src = {
+          URL.createObjectURL(image)
+        }
+        alt = ""
+        style = {
+          {
+            width: "40px",
+            height: "40px",
+            borderRadius: "50%"
+          }
+        }
+        />
+      ) : ( <
+        img src = ""
+        alt = "" / >
+      )
+    } <
+    /div> <
+    div className = "mb-3" >
+    <
+    label className = "form-label"
+    htmlFor = "questType" >
+    نوع الاجابة <
+    /label> <
+    select className = "form-control"
+    id = "questType"
+    ref = {
+      Qtype
+    } >
+    <
+    option value = "0" > اختر نوع الجابة < /option> <
+    option value = "single" > Single < /option> <
+    option value = "multiChoice" > Multi choice < /option> <
+    /select> <
+    /div> <
+    div className = "mb-3" >
+    <
+    label className = "form-label"
+    htmlFor = "questDegree" >
+    درجة السؤال <
+    /label> <
+    input type = "number"
+    id = "questDegree"
+    className = "form-control"
+    ref = {
+      qDegree
+    }
+    /> <
+    /div> <
+    div className = "mb-3" >
+    <
+    GetVideo vid = {
+      videoid
+    }
+    /> <
+    /div> <
+    button type = "submit"
+    className = "btn btn-success" >
+    اضافةالسؤال <
+    /button> <
+    /form> <
+    />
   );
 };
 

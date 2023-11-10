@@ -1,4 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, {
+  useEffect,
+  useState
+} from "react";
 import Exam from "../UI/userExam/Exam";
 
 const PreExam3D = () => {
@@ -14,7 +17,7 @@ const PreExam3D = () => {
   const token = localStorage.getItem("token");
 
   const GetData = async () => {
-    const response = await fetch("http://localhost:8000/exam/preexam3d", {
+    const response = await fetch("https://tutorialbackend.onrender.com/exam/preexam3d", {
       method: "Get",
       headers: {
         Authorization: `${token}`,
@@ -34,17 +37,29 @@ const PreExam3D = () => {
     }
   };
 
-  return (
-    <>
-      <Exam
-        examid={exid}
-        exdata={examData}
-        examname={examName}
-        examDegree={examDegree}
-        Questioncount={examQuestion}
-        allQuestions={questions}
-      />
-    </>
+  return ( <
+    >
+    <
+    Exam examid = {
+      exid
+    }
+    exdata = {
+      examData
+    }
+    examname = {
+      examName
+    }
+    examDegree = {
+      examDegree
+    }
+    Questioncount = {
+      examQuestion
+    }
+    allQuestions = {
+      questions
+    }
+    /> <
+    />
   );
 };
 

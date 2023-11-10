@@ -8,17 +8,21 @@ const AllActivities = () => {
     getActiv();
   }, []);
   const getActiv = async () => {
-    const respon = await fetch("http://localhost:8000/admin/activity/all", {
-      method: "GET",
-      headers: {
-        Authorization: `${token}`,
-      },
-    });
+    const respon = await fetch(
+      "https://tutorialbackend.onrender.com/admin/activity/all",
+      {
+        method: "GET",
+        headers: {
+          Authorization: `${token}`,
+        },
+      }
+    );
     const data = await respon.json();
     setActiv(data);
   };
   return (
     <>
+      {" "}
       {activ.length > 0 ? (
         activ.map((act) => (
           <ActivityCard
@@ -29,8 +33,8 @@ const AllActivities = () => {
           />
         ))
       ) : (
-        <div>No Active exist</div>
-      )}
+        <div> No Active exist </div>
+      )}{" "}
     </>
   );
 };

@@ -6,12 +6,15 @@ const MCourseActive = ({ Actid }) => {
   const token = localStorage.getItem("token");
   const [myAdj, setMyAdj] = useState();
   const myData = async () => {
-    const response = await fetch(`http://localhost:8000/activ/${Actid}`, {
-      method: "GET",
-      headers: {
-        Authorization: `${token}`,
-      },
-    });
+    const response = await fetch(
+      `https://tutorialbackend.onrender.com/activ/${Actid}`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `${token}`,
+        },
+      }
+    );
     const data = await response.json();
     setMyAdj(data);
   };
@@ -20,7 +23,9 @@ const MCourseActive = ({ Actid }) => {
   }, []);
   return (
     <Link className="" to={`/addajective/${myAdj && myAdj._id}`}>
-      {myAdj && myAdj.title}hh
+      {" "}
+      {myAdj && myAdj.title}
+      hh{" "}
     </Link>
   );
 };

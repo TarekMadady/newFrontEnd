@@ -4,9 +4,12 @@ import CourseCard from "../UI/CourseCard";
 const Courses = () => {
   const [cours, setCours] = useState();
   const myData = async () => {
-    const response = await fetch("http://localhost:8000/track/allfree", {
-      method: "GET",
-    });
+    const response = await fetch(
+      "https://tutorialbackend.onrender.com/track/allfree",
+      {
+        method: "GET",
+      }
+    );
     const data = await response.json();
     console.log(data);
     setCours(data);
@@ -19,9 +22,10 @@ const Courses = () => {
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           {/* <h2>مسارات</h2> */}
-          <p>المديولات التعليمية</p>
+          <p> المديولات التعليمية </p>{" "}
         </div>
         <div className="row" data-aos="zoom-in" data-aos-delay="100">
+          {" "}
           {cours &&
             cours.map((m) => (
               <CourseCard
@@ -29,10 +33,10 @@ const Courses = () => {
                 tname={m.trackName}
                 tabout={m.About_track}
               />
-            ))}
+            ))}{" "}
           {/* <CourseCard /> */}
-        </div>
-      </div>
+        </div>{" "}
+      </div>{" "}
     </section>
   );
 };

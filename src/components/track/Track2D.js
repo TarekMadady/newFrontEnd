@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, {
+  useEffect,
+  useState
+} from "react";
 import TrackCard from "../UI/trackCard/TrackCard";
 
 const Track2D = () => {
   const [trackData, setTrackData] = useState([]);
   const token = localStorage.getItem("token");
   const getTrack2d = async () => {
-    const response = await fetch("http://localhost:8000/track/2d", {
+    const response = await fetch("https://tutorialbackend.onrender.com/track/2d", {
       method: "GET",
       headers: {
         Authorization: `${token}`,
@@ -20,19 +23,29 @@ const Track2D = () => {
     getTrack2d();
   }, []);
 
-  return (
-    <div className="d-flex justify-content-around flex-wrap">
-      {trackData &&
-        trackData.map((track) => (
-          <TrackCard
-            key={track._id}
-            title={track.trackName}
-            tag={track.tags}
-            id={track._id}
-            about={track.About_track}
-          />
-        ))}
-    </div>
+  return ( <
+    div className = "d-flex justify-content-around flex-wrap" > {
+      trackData &&
+      trackData.map((track) => ( <
+        TrackCard key = {
+          track._id
+        }
+        title = {
+          track.trackName
+        }
+        tag = {
+          track.tags
+        }
+        id = {
+          track._id
+        }
+        about = {
+          track.About_track
+        }
+        />
+      ))
+    } <
+    /div>
   );
 };
 
