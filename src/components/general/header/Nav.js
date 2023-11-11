@@ -9,18 +9,13 @@ const Nav = () => {
         <ul>
           <AccountSection />
           <li className="nav-item dropdown">
-            <Link
-              to=""
-            >
-              من نحن
-            </Link>
-            
+            <Link to="">من نحن</Link>
           </li>
           <li>
-              <Link to="">تعليمات عامة</Link>
+            <Link to="">تعليمات عامة</Link>
           </li>
           <li>
-              <Link to="">تواصل معنا</Link>
+            <Link to="">تواصل معنا</Link>
           </li>
           <li>
             <Link to="/tracks">المديولات التعليمية</Link>
@@ -34,11 +29,11 @@ const Nav = () => {
         <i className="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <img
-              src={othLogo}
-              className="img-fluid ms-2"
-              style={{ width: "80px", borderRadius:"50%" }}
-              alt=""
-            />
+        src={othLogo}
+        className="img-fluid ms-2"
+        style={{ width: "80px", borderRadius: "50%" }}
+        alt=""
+      />
     </>
   );
 };

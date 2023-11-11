@@ -6,7 +6,6 @@ const UserHeader = (props) => {
   return (
     <nav className="navbar navbar-expand-lg   bg-body-tertiary">
       <div className="container-fluid">
-       
         <button
           className="navbar-toggler"
           type="button"
@@ -23,15 +22,15 @@ const UserHeader = (props) => {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav  mb-2 mb-lg-0 w-100 nav justify-content-center">
-          <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link fs-2" to="/logout">
                 خروج
               </Link>
             </li>
             <li className="nav-item">
-            <Link to="/home" className="nav-link fs-2">
-          لوحة التحكم
-        </Link>
+              <Link to="/home" className="nav-link fs-2">
+                لوحة التحكم
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link fs-2" aria-current="page" to="/track">
@@ -74,11 +73,15 @@ const UserHeader = (props) => {
                 </li>
               </ul> */}
             </li>
-           
           </ul>
           <ul>
             <li>
-              <img src="/images/WhatsApp Image 2023-10-01 at 4.25.02 AM.jpeg" className="me-5" style={{width:"45px", borderRadius:"50%"}} alt="" />
+              <img
+                src="/images/WhatsApp Image 2023-10-01 at 4.25.02 AM.jpeg"
+                className="me-5"
+                style={{ width: "45px", borderRadius: "50%" }}
+                alt=""
+              />
             </li>
           </ul>
         </div>

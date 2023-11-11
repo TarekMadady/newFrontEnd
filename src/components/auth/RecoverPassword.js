@@ -1,9 +1,5 @@
-import React, {
-  useRef
-} from "react";
-import {
-  useNavigate
-} from "react-router-dom";
+import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 const RecoverPassword = (props) => {
   const passData = useRef();
@@ -14,61 +10,54 @@ const RecoverPassword = (props) => {
     const sendData = {
       password: userPass,
     };
-    fetch(`https://tutorialbackend.onrender.com/auth/recoverpassword/${props.parm}`, {
+    fetch(
+      `https://tutorialbackend.onrender.com/auth/recoverpassword/${props.parm}`,
+      {
         method: "PATCH",
         body: JSON.stringify(sendData),
         headers: {
           "content-type": "application/json",
         },
-      })
+      }
+    )
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         navigate("/signin", {
-          replace: true
+          replace: true,
         });
       });
   }
-  return ( <
-    form onSubmit = {
-      submitRecover
-    }
-    className = "mt-5" >
-    <
-    div className = "mb-3" >
-    <
-    label htmlFor = "newpassword"
-    className = "form-label" >
-    Password <
-    /label> <
-    input type = "password"
-    className = "form-control"
-    id = "newpassword"
-    placeholder = "new Password"
-    ref = {
-      passData
-    }
-    /> <
-    /div> <
-    div className = "mb-3" >
-    <
-    label htmlFor = "newConfpassword"
-    className = "form-label" >
-    Confirm Password <
-    /label> <
-    input type = "password"
-    className = "form-control"
-    id = "newConfpassword"
-    placeholder = "new Password" /
-    >
-    <
-    /div> <
-    button type = "submit"
-    className = "btn btn-primary w-100" >
-    تغير كلمة المرور <
-    /button> <
-    /form>
+  return (
+    <form onSubmit={submitRecover} className="mt-5">
+      <div className="mb-3">
+        <label htmlFor="newpassword" className="form-label">
+          Password{" "}
+        </label>{" "}
+        <input
+          type="password"
+          className="form-control"
+          id="newpassword"
+          placeholder="new Password"
+          ref={passData}
+        />{" "}
+      </div>{" "}
+      <div className="mb-3">
+        <label htmlFor="newConfpassword" className="form-label">
+          Confirm Password{" "}
+        </label>{" "}
+        <input
+          type="password"
+          className="form-control"
+          id="newConfpassword"
+          placeholder="new Password"
+        />
+      </div>{" "}
+      <button type="submit" className="btn btn-primary w-100">
+        تغير كلمة المرور{" "}
+      </button>{" "}
+    </form>
   );
 };
 

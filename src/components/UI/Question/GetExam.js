@@ -1,8 +1,4 @@
-import React, {
-  useEffect,
-  useState,
-  useRef
-} from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 const GetExam = (props) => {
   const token = localStorage.getItem("token");
@@ -12,13 +8,16 @@ const GetExam = (props) => {
     examData();
   }, []);
   const examData = async () => {
-    const response = await fetch("https://tutorialbackend.onrender.com/admin/exam/all", {
-      method: "GET",
-      headers: {
-        Authorization: `${token}`,
-        "content-type": "application/json",
-      },
-    });
+    const response = await fetch(
+      "https://tutorialbackend.onrender.com/admin/exam/all",
+      {
+        method: "GET",
+        headers: {
+          Authorization: `${token}`,
+          "content-type": "application/json",
+        },
+      }
+    );
     const Data = await response.json();
     console.log(Data);
     setExam(Data);
@@ -30,33 +29,20 @@ const GetExam = (props) => {
     props.examID(id);
   }
 
-  return ( <
-    select className = "form-control"
-    ref = {
-      exid
-    }
-    onChange = {
-      changevalue
-    } >
-    <
-    option value = "0" > اختر امتحان < /option> {
-      exam.length === 0 ? ( <
-        option > مفيش امتحان < /option>
+  return (
+    <select className="form-control" ref={exid} onChange={changevalue}>
+      <option value="0"> اختر امتحان </option>{" "}
+      {exam.length === 0 ? (
+        <option> مفيش امتحان </option>
       ) : (
-        exam.map((exm) => ( <
-          option key = {
-            exm._id
-          }
-          value = {
-            exm._id
-          } > {
-            exm.examname
-          } <
-          /option>
+        exam.map((exm) => (
+          <option key={exm._id} value={exm._id}>
+            {" "}
+            {exm.examname}{" "}
+          </option>
         ))
-      )
-    } <
-    /select>
+      )}{" "}
+    </select>
   );
 };
 

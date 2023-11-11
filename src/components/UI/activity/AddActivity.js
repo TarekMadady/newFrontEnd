@@ -1,6 +1,4 @@
-import React, {
-  useRef
-} from "react";
+import React, { useRef } from "react";
 // import { useNavigate } from "react-router-dom";
 // import GetCourses from "../../UI/Courses/GetCourses";
 
@@ -15,14 +13,17 @@ const AddActivity = (props) => {
     const Data = {
       title: atitle.current.value,
     };
-    fetch(`https://tutorialbackend.onrender.com/admin/activity/add/${props.id}`, {
+    fetch(
+      `https://tutorialbackend.onrender.com/admin/activity/add/${props.id}`,
+      {
         method: "POST",
         body: JSON.stringify(Data),
         headers: {
           "content-type": "application/json",
           Authorization: `${token}`,
         },
-      })
+      }
+    )
       .then((response) => {
         return response.json();
       })
@@ -32,30 +33,18 @@ const AddActivity = (props) => {
       });
   }
 
-  return ( <
-    form onSubmit = {
-      addActive
-    } >
-    <
-    div className = "mb-3" >
-    <
-    label className = "form-label"
-    htmlFor = "actitle" >
-    النشاط <
-    /label> <
-    input type = "text"
-    id = "actitle"
-    className = "form-control"
-    ref = {
-      atitle
-    }
-    /> <
-    /div> <
-    button type = "submit"
-    className = "btn btn-primary" >
-    اضافة النشاط <
-    /button> <
-    /form>
+  return (
+    <form onSubmit={addActive}>
+      <div className="mb-3">
+        <label className="form-label" htmlFor="actitle">
+          النشاط{" "}
+        </label>{" "}
+        <input type="text" id="actitle" className="form-control" ref={atitle} />{" "}
+      </div>{" "}
+      <button type="submit" className="btn btn-primary">
+        اضافة النشاط{" "}
+      </button>{" "}
+    </form>
   );
 };
 

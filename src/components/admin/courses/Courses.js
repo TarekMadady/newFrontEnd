@@ -1,7 +1,4 @@
-import React, {
-  useEffect,
-  useState
-} from "react";
+import React, { useEffect, useState } from "react";
 import CoursCard from "../../UI/Courses/CourseCard";
 
 const Courses = () => {
@@ -11,40 +8,32 @@ const Courses = () => {
     getAllCourse();
   }, []);
   const getAllCourse = async () => {
-    const response = await fetch("https://tutorialbackend.onrender.com/admin/course/all", {
-      method: "GET",
-      headers: {
-        Authorization: `${token}`,
-      },
-    });
+    const response = await fetch(
+      "https://tutorialbackend.onrender.com/admin/course/all",
+      {
+        method: "GET",
+        headers: {
+          Authorization: `${token}`,
+        },
+      }
+    );
     const Data = await response.json();
     setCourse(Data);
   };
-  return ( <
-    > {
-      course.map((cour) => ( <
-        CoursCard key = {
-          cour._id
-        }
-        title = {
-          cour.coursename
-        }
-        target = {
-          cour.coursetarget[0]
-        }
-        ins = {
-          cour.courseinstructions[0]
-        }
-        video = {
-          cour.coursevideoes.length
-        }
-        id = {
-          cour._id
-        }
+  return (
+    <>
+      {" "}
+      {course.map((cour) => (
+        <CoursCard
+          key={cour._id}
+          title={cour.coursename}
+          target={cour.coursetarget[0]}
+          ins={cour.courseinstructions[0]}
+          video={cour.coursevideoes.length}
+          id={cour._id}
         />
-      ))
-    } <
-    />
+      ))}{" "}
+    </>
   );
 };
 export default Courses;

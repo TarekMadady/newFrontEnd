@@ -1,7 +1,4 @@
-import React, {
-  useEffect,
-  useState
-} from "react";
+import React, { useEffect, useState } from "react";
 import TrackCard from "../../UI/Track/TrackCard";
 
 const Trackes = (props) => {
@@ -11,38 +8,32 @@ const Trackes = (props) => {
     getData();
   }, []);
   const getData = async () => {
-    const respons = await fetch("https://tutorialbackend.onrender.com/admin/track/all", {
-      method: "GET",
-      headers: {
-        Authorization: `${token}`,
-      },
-    });
+    const respons = await fetch(
+      "https://tutorialbackend.onrender.com/admin/track/all",
+      {
+        method: "GET",
+        headers: {
+          Authorization: `${token}`,
+        },
+      }
+    );
     const Data = await respons.json();
     setTrackes(Data);
   };
 
-  return ( <
-    div className = "accordion" > {
-      trackes.map((track) => ( <
-        TrackCard key = {
-          track._id
-        }
-        trackName = {
-          track.trackName
-        }
-        course = {
-          track.Courses.length
-        }
-        About = {
-          track.About_track
-        }
-        tid = {
-          track._id
-        }
+  return (
+    <div className="accordion">
+      {" "}
+      {trackes.map((track) => (
+        <TrackCard
+          key={track._id}
+          trackName={track.trackName}
+          course={track.Courses.length}
+          About={track.About_track}
+          tid={track._id}
         />
-      ))
-    } <
-    /div>
+      ))}{" "}
+    </div>
   );
 };
 

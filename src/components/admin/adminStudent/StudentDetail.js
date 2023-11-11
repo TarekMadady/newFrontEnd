@@ -1,7 +1,4 @@
-import React, {
-  useEffect,
-  useState
-} from "react";
+import React, { useEffect, useState } from "react";
 
 import StudentD from "../adminGeneral/StudentD";
 const StudentDetail = (props) => {
@@ -12,7 +9,8 @@ const StudentDetail = (props) => {
   }, []);
   const Search = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/admin/student/${props.parm}`, {
+      `https://tutorialbackend.onrender.com/admin/student/${props.parm}`,
+      {
         method: "GET",
         headers: {
           "content-type": "application/json",
@@ -23,38 +21,20 @@ const StudentDetail = (props) => {
     const data = await response.json();
     setStudent(data);
   };
-  return ( <
-    main className = "content" >
-    <
-    StudentD key = {
-      student._id
-    }
-    id = {
-      student._id
-    }
-    name = {
-      student.fullName
-    }
-    email = {
-      student.email
-    }
-    firstTime = {
-      student.firstTime
-    }
-    cdate = {
-      student.createdAt
-    }
-    active = {
-      student.active
-    }
-    prexam = {
-      student.prexam
-    }
-    exam = {
-      student.exams
-    }
-    /> <
-    /main>
+  return (
+    <main className="content">
+      <StudentD
+        key={student._id}
+        id={student._id}
+        name={student.fullName}
+        email={student.email}
+        firstTime={student.firstTime}
+        cdate={student.createdAt}
+        active={student.active}
+        prexam={student.prexam}
+        exam={student.exams}
+      />{" "}
+    </main>
   );
 };
 
