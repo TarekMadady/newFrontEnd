@@ -9,7 +9,7 @@ const StudentDetail = (props) => {
   }, []);
   const Search = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/admin/student/${props.parm}`,
+      `https://testb.oneproduct.online//admin/student/${props.parm}`,
       {
         method: "GET",
         headers: {

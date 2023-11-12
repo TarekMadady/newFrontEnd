@@ -9,7 +9,7 @@ const QuestionAnswers = (props) => {
 
   const getAnswers = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/admin/question/answer/${props.qid}`,
+      `https://testb.oneproduct.online//admin/question/answer/${props.qid}`,
       {
         method: "GET",
         headers: {

@@ -5,7 +5,7 @@ const CourseName = ({ vid }) => {
   const [myV, setMyV] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/video/details/${vid}`,
+      `https://testb.oneproduct.online//video/details/${vid}`,
       {
         method: "GET",
         headers: {

@@ -5,7 +5,7 @@ const ShowVideo = (props) => {
   const [videoData, setVideoData] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/admin/video/details/${props.id}`,
+      `https://testb.oneproduct.online//admin/video/details/${props.id}`,
       {
         method: "GET",
         headers: {
@@ -32,7 +32,7 @@ const ShowVideo = (props) => {
           <div className="card-body">
             <video controls className="w-100">
               <source
-                src={`https://tutorialbackend.onrender.com/admin/video/show/${props.id}`}
+                src={`https://testb.oneproduct.online//admin/video/show/${props.id}`}
                 type="video/mp4"
               />
             </video>{" "}

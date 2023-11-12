@@ -38,16 +38,13 @@ const QuestionAdd = (props) => {
     formData.append("degree", qDegree.current.value);
     formData.append("video", vide);
 
-    fetch(
-      `https://tutorialbackend.onrender.com/admin/question/add/${props.exid}`,
-      {
-        method: "POST",
-        body: formData,
-        headers: {
-          Authorization: `${token}`,
-        },
-      }
-    )
+    fetch(`https://testb.oneproduct.online//admin/question/add/${props.exid}`, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Authorization: `${token}`,
+      },
+    })
       .then((response) => {
         return response.json();
       })

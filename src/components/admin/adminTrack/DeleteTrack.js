@@ -1,9 +1,5 @@
-import {
-  useEffect
-} from "react";
-import {
-  useNavigate
-} from "react-router-dom";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DeleteTrack = (props) => {
   const token = localStorage.getItem("token");
@@ -13,7 +9,8 @@ const DeleteTrack = (props) => {
   }, []);
   const Delete = async () => {
     const respons = await fetch(
-      `https://tutorialbackend.onrender.com/admin/track/${props.id}`, {
+      `https://testb.oneproduct.online//admin/track/${props.id}`,
+      {
         method: "DELETE",
         headers: {
           Authorization: `${token}`,
@@ -23,7 +20,7 @@ const DeleteTrack = (props) => {
     const data = await respons.json();
     if (data) {
       navigate("/admin/track", {
-        replace: true
+        replace: true,
       });
     }
   };

@@ -9,7 +9,7 @@ const VideoAll = () => {
   }, []);
   const getAllVideo = async () => {
     const respons = await fetch(
-      "https://tutorialbackend.onrender.com/admin/video/all",
+      "https://testb.oneproduct.online//admin/video/all",
       {
         method: "GET",
         headers: {

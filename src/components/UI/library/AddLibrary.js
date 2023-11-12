@@ -16,7 +16,7 @@ const AddLibrary = ({ id }) => {
       url: liburl.current.value,
       desc: libdesc.current.value,
     };
-    fetch(`https://tutorialbackend.onrender.com/admin/library/${id}`, {
+    fetch(`https://testb.oneproduct.online//admin/library/${id}`, {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

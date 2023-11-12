@@ -11,7 +11,7 @@ const ForgetPassword = () => {
     const Data = {
       email: usermail,
     };
-    fetch("https://tutorialbackend.onrender.com/auth/forgetpassword", {
+    fetch("https://testb.oneproduct.online//auth/forgetpassword", {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

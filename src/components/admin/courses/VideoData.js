@@ -6,7 +6,7 @@ const VideoData = (props) => {
   const [videoData, setVideoData] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/admin/video/details/${props.vid}`,
+      `https://testb.oneproduct.online//admin/video/details/${props.vid}`,
       {
         method: "GET",
         headers: {

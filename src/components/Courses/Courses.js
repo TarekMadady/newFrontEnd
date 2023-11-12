@@ -5,7 +5,7 @@ const Courses = () => {
   const [cours, setCours] = useState();
   const myData = async () => {
     const response = await fetch(
-      "https://tutorialbackend.onrender.com/track/allfree",
+      "https://testb.oneproduct.online//track/allfree",
       {
         method: "GET",
       }

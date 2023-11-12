@@ -15,7 +15,7 @@ const PreExam3D = () => {
 
   const GetData = async () => {
     const response = await fetch(
-      "https://tutorialbackend.onrender.com/exam/preexam3d",
+      "https://testb.oneproduct.online//exam/preexam3d",
       {
         method: "Get",
         headers: {

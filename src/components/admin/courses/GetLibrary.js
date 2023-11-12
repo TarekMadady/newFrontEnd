@@ -7,7 +7,7 @@ const GetLibrary = ({ id }) => {
   const [lib, setLib] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/admin/library/all/${id}`,
+      `https://testb.oneproduct.online//admin/library/all/${id}`,
       {
         method: "GET",
         headers: {

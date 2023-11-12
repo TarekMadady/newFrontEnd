@@ -9,7 +9,7 @@ const AllActivities = () => {
   }, []);
   const getActiv = async () => {
     const respon = await fetch(
-      "https://tutorialbackend.onrender.com/admin/activity/all",
+      "https://testb.oneproduct.online//admin/activity/all",
       {
         method: "GET",
         headers: {

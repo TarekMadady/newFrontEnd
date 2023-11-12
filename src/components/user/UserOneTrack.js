@@ -7,7 +7,7 @@ const UserOneTrack = ({ trackid }) => {
   const [tra, setTra] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/track/details/${trackid}`,
+      `https://testb.oneproduct.online//track/details/${trackid}`,
       {
         method: "GET",
         headers: {

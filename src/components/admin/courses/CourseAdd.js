@@ -57,17 +57,14 @@ const CourseAdd = (props) => {
       instruction: instruc,
       target: target,
     };
-    fetch(
-      `https://tutorialbackend.onrender.com/admin/course/add/${props.trac}`,
-      {
-        method: "POST",
-        body: JSON.stringify(Data),
-        headers: {
-          Authorization: `${token}`,
-          "content-type": "application/json",
-        },
-      }
-    )
+    fetch(`https://testb.oneproduct.online//admin/course/add/${props.trac}`, {
+      method: "POST",
+      body: JSON.stringify(Data),
+      headers: {
+        Authorization: `${token}`,
+        "content-type": "application/json",
+      },
+    })
       .then((response) => {
         return response.json();
       })

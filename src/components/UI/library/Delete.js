@@ -1,33 +1,29 @@
-import {
-  useEffect
-} from "react";
-import {
-  useParams,
-  useNavigate
-} from "react-router-dom";
+import { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Delete = () => {
   let navigate = useNavigate();
   const token = localStorage.getItem("token");
   const parm = useParams();
-  const {
-    libid
-  } = parm;
+  const { libid } = parm;
   useEffect(() => {
     Dele();
   }, []);
   const Dele = async () => {
-    const repon = await fetch(`https://tutorialbackend.onrender.com/admin/library/${libid}`, {
-      method: "DELETE",
-      headers: {
-        Authorization: `${token}`,
-      },
-    });
+    const repon = await fetch(
+      `https://testb.oneproduct.online//admin/library/${libid}`,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `${token}`,
+        },
+      }
+    );
     const data = await repon.json();
     window.location.reload(false);
     // console.log(data);
     navigate("/admin/track", {
-      replace: true
+      replace: true,
     });
   };
   // return <>hello</>;

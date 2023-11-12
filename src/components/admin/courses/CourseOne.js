@@ -22,7 +22,7 @@ const CourseOne = () => {
 
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/admin/course/details/${cid}`,
+      `https://testb.oneproduct.online//admin/course/details/${cid}`,
       {
         method: "GET",
         headers: {

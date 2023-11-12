@@ -11,7 +11,7 @@ const RecoverPassword = (props) => {
       password: userPass,
     };
     fetch(
-      `https://tutorialbackend.onrender.com/auth/recoverpassword/${props.parm}`,
+      `https://testb.oneproduct.online//auth/recoverpassword/${props.parm}`,
       {
         method: "PATCH",
         body: JSON.stringify(sendData),

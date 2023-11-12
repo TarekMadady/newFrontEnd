@@ -9,7 +9,7 @@ const Trackes = (props) => {
   }, []);
   const getData = async () => {
     const respons = await fetch(
-      "https://tutorialbackend.onrender.com/admin/track/all",
+      "https://testb.oneproduct.online//admin/track/all",
       {
         method: "GET",
         headers: {

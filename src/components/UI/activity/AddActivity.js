@@ -13,17 +13,14 @@ const AddActivity = (props) => {
     const Data = {
       title: atitle.current.value,
     };
-    fetch(
-      `https://tutorialbackend.onrender.com/admin/activity/add/${props.id}`,
-      {
-        method: "POST",
-        body: JSON.stringify(Data),
-        headers: {
-          "content-type": "application/json",
-          Authorization: `${token}`,
-        },
-      }
-    )
+    fetch(`https://testb.oneproduct.online//admin/activity/add/${props.id}`, {
+      method: "POST",
+      body: JSON.stringify(Data),
+      headers: {
+        "content-type": "application/json",
+        Authorization: `${token}`,
+      },
+    })
       .then((response) => {
         return response.json();
       })

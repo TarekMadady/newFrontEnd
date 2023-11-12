@@ -10,7 +10,7 @@ const TrackCard = (props) => {
 
   function enrolCour() {
     // const courid = props.id;
-    fetch(`https://tutorialbackend.onrender.com/track/enroll/${props.id}`, {
+    fetch(`https://testb.oneproduct.online//track/enroll/${props.id}`, {
       method: "POST",
       headers: {
         Authorization: `${token}`,

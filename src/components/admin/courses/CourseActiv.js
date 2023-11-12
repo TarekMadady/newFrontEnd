@@ -5,7 +5,7 @@ const CourseActiv = ({ id }) => {
   const [act, setAct] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/admin/activity/all/${id}`,
+      `https://testb.oneproduct.online//admin/activity/all/${id}`,
       {
         method: "GET",
         headers: {

@@ -1,31 +1,27 @@
-import {
-  useEffect
-} from "react";
-import {
-  useParams,
-  useNavigate
-} from "react-router-dom";
+import { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 const DeleteVideo = () => {
   let navigate = useNavigate();
   const param = useParams();
-  const {
-    vid
-  } = param;
+  const { vid } = param;
   const token = localStorage.getItem("token");
   useEffect(() => {
     Del();
   }, []);
   const Del = async () => {
-    const respon = await fetch(`https://tutorialbackend.onrender.com/admin/video/${vid}`, {
-      method: "DELETE",
-      headers: {
-        Authorization: `${token}`,
-      },
-    });
+    const respon = await fetch(
+      `https://testb.oneproduct.online//admin/video/${vid}`,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `${token}`,
+        },
+      }
+    );
     const data = await respon.json();
     if (data) {
       navigate("/admin/video/all", {
-        replace: true
+        replace: true,
       });
     }
   };

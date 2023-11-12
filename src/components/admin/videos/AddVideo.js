@@ -19,16 +19,13 @@ const AddVideo = (props) => {
     const formData = new FormData();
     formData.append("title", title.current.value);
     formData.append("videofile", video);
-    fetch(
-      `https://tutorialbackend.onrender.com/admin/video/add/${props.course}`,
-      {
-        method: "POST",
-        body: formData,
-        headers: {
-          Authorization: `${token}`,
-        },
-      }
-    )
+    fetch(`https://testb.oneproduct.online//admin/video/add/${props.course}`, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Authorization: `${token}`,
+      },
+    })
       .then((response) => {
         return response.json();
       })

@@ -7,7 +7,7 @@ const ActiveCount = ({ cid }) => {
   const [actd, setActd] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/course/${cid}`,
+      `https://testb.oneproduct.online//course/${cid}`,
       {
         method: "GET",
         headers: {

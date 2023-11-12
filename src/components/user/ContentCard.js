@@ -9,7 +9,7 @@ const ContentCard = ({ cid, coun }) => {
   const [show, setShow] = useState(false);
   const myData = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/video/details/${cid}`,
+      `https://testb.oneproduct.online//video/details/${cid}`,
       {
         method: "GET",
         headers: {

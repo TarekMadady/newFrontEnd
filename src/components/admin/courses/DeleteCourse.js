@@ -1,9 +1,5 @@
-import {
-  useEffect
-} from "react";
-import {
-  useNavigate
-} from "react-router-dom";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DeleteCourse = (props) => {
   let navigate = useNavigate();
@@ -13,7 +9,8 @@ const DeleteCourse = (props) => {
   }, []);
   const Dlete = async () => {
     const respon = await fetch(
-      `https://tutorialbackend.onrender.com/admin/course/${props.id}`, {
+      `https://testb.oneproduct.online//admin/course/${props.id}`,
+      {
         method: "DELETE",
         headers: {
           Authorization: `${token}`,

@@ -1,9 +1,5 @@
-import {
-  useEffect
-} from "react";
-import {
-  useNavigate
-} from "react-router-dom";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DeleteQuestion = (props) => {
   let navigate = useNavigate();
@@ -13,7 +9,8 @@ const DeleteQuestion = (props) => {
   }, []);
   const dele = async () => {
     const respons = await fetch(
-      `https://tutorialbackend.onrender.com/admin/question/${props.parm}`, {
+      `https://testb.oneproduct.online//admin/question/${props.parm}`,
+      {
         method: "DELETE",
         headers: {
           Authorization: `${token}`,
@@ -23,7 +20,7 @@ const DeleteQuestion = (props) => {
     const Data = await respons.json();
     console.log(Data);
     navigate("/admin/exam", {
-      replace: true
+      replace: true,
     });
   };
   // return <div>hello</div>;

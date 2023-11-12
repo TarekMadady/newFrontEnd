@@ -9,7 +9,7 @@ const GetExam = (props) => {
   }, []);
   const examData = async () => {
     const response = await fetch(
-      "https://tutorialbackend.onrender.com/admin/exam/all",
+      "https://testb.oneproduct.online//admin/exam/all",
       {
         method: "GET",
         headers: {

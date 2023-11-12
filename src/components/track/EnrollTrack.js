@@ -1,21 +1,15 @@
-import {
-  useEffect
-} from "react";
-import {
-  useParams,
-  useNavigate
-} from "react-router-dom";
+import { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
 const EnrollTrack = () => {
   const token = localStorage.getItem("token");
   let navigate = useNavigate();
   const params = useParams();
-  const {
-    trackid
-  } = params;
+  const { trackid } = params;
   const enroll = async () => {
     const response = await fetch(
-      `https://tutorialbackend.onrender.com/track/enroll/${trackid}`, {
+      `https://testb.oneproduct.online//track/enroll/${trackid}`,
+      {
         method: "POST",
         headers: {
           Authorization: `${token}`,
@@ -25,7 +19,7 @@ const EnrollTrack = () => {
     const data = await response.json();
 
     navigate("/home", {
-      replace: true
+      replace: true,
     });
     // console.log(data);
   };
