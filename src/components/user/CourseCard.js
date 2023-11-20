@@ -27,7 +27,7 @@ const CourseCard = ({ courid }) => {
 
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online//course/${courid}`,
+      `https://testb.oneproduct.online/course/${courid}`,
       {
         method: "GET",
         headers: {

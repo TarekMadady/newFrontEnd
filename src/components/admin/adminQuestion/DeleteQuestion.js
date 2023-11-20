@@ -9,7 +9,7 @@ const DeleteQuestion = (props) => {
   }, []);
   const dele = async () => {
     const respons = await fetch(
-      `https://testb.oneproduct.online//admin/question/${props.parm}`,
+      `https://testb.oneproduct.online/admin/question/${props.parm}`,
       {
         method: "DELETE",
         headers: {

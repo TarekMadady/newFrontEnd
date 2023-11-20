@@ -7,7 +7,7 @@ const Libraries = ({ lid }) => {
   console.log(lid);
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online//library/${lid}`,
+      `https://testb.oneproduct.online/library/${lid}`,
       {
         method: "GET",
         headers: {

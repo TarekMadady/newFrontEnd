@@ -13,7 +13,7 @@ const ShowExamResult = (props) => {
 
   const getData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online//exam/showresult/${archive}`,
+      `https://testb.oneproduct.online/exam/showresult/${archive}`,
       {
         method: "GET",
         headers: {

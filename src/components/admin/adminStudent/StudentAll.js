@@ -8,7 +8,7 @@ const StudentAll = () => {
   }, []);
   const Search = async () => {
     const response = await fetch(
-      "https://testb.oneproduct.online//admin/student/all",
+      "https://testb.oneproduct.online/admin/student/all",
       {
         method: "GET",
         headers: {

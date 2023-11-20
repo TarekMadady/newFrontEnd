@@ -8,7 +8,7 @@ const EnrollTrack = () => {
   const { trackid } = params;
   const enroll = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online//track/enroll/${trackid}`,
+      `https://testb.oneproduct.online/track/enroll/${trackid}`,
       {
         method: "POST",
         headers: {

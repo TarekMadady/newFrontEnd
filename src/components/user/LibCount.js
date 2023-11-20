@@ -6,7 +6,7 @@ const LibCount = ({ cid }) => {
   const [mlib, setMlib] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online//course/${cid}`,
+      `https://testb.oneproduct.online/course/${cid}`,
       {
         method: "GET",
         headers: {

@@ -7,7 +7,7 @@ const MCourseActive = ({ Actid }) => {
   const [myAdj, setMyAdj] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online//activ/${Actid}`,
+      `https://testb.oneproduct.online/activ/${Actid}`,
       {
         method: "GET",
         headers: {

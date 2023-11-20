@@ -18,7 +18,7 @@ const SignUpForm = () => {
       email: useremail,
       password: password,
     };
-    fetch("https://testb.oneproduct.online//auth/signup", {
+    fetch("https://testb.oneproduct.online/auth/signup", {
       method: "POST",
       body: JSON.stringify(userData),
       headers: {

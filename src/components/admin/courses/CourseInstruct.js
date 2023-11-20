@@ -5,7 +5,7 @@ const CourseInstruct = ({ id }) => {
   const [instruct, setInstruct] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online//admin/course/details/${id}`,
+      `https://testb.oneproduct.online/admin/course/details/${id}`,
       {
         method: "GET",
         headers: {

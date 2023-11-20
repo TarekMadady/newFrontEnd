@@ -11,7 +11,7 @@ const Delete = () => {
   }, []);
   const Dele = async () => {
     const repon = await fetch(
-      `https://testb.oneproduct.online//admin/library/${libid}`,
+      `https://testb.oneproduct.online/admin/library/${libid}`,
       {
         method: "DELETE",
         headers: {

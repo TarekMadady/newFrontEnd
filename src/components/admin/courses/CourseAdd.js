@@ -57,7 +57,7 @@ const CourseAdd = (props) => {
       instruction: instruc,
       target: target,
     };
-    fetch(`https://testb.oneproduct.online//admin/course/add/${props.trac}`, {
+    fetch(`https://testb.oneproduct.online/admin/course/add/${props.trac}`, {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {
