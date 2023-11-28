@@ -7,7 +7,7 @@ const ActiveCount = ({ cid }) => {
   const [actd, setActd] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online/course/${cid}`,
+      `http://api.motiongraphic.tech/course/${cid}`,
       {
         method: "GET",
         headers: {

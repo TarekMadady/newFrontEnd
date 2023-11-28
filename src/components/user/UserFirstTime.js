@@ -9,7 +9,7 @@ const UserFirstTime = () => {
   }, []);
   const getuser = async () => {
     const respon = await fetch(
-      "https://testb.oneproduct.online/user/getfirst",
+      "http://api.motiongraphic.tech/user/getfirst",
       {
         method: "GET",
         headers: {

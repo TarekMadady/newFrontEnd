@@ -15,7 +15,7 @@ const AddTrack = () => {
       tags: typeoftrack.current.value,
     };
 
-    fetch("https://testb.oneproduct.online/admin/track/add", {
+    fetch("http://api.motiongraphic.tech/admin/track/add", {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

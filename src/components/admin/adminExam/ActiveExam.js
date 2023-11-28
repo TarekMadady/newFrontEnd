@@ -5,7 +5,7 @@ const ActiveExam = (props) => {
   let navigate = useNavigate();
   const examid = props.parm;
   const token = localStorage.getItem("token");
-  fetch(`https://testb.oneproduct.online/admin/exam/active/${examid}`, {
+  fetch(`http://api.motiongraphic.tech/admin/exam/active/${examid}`, {
     method: "PATCH",
     headers: {
       Authorization: `${token}`,

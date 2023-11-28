@@ -6,7 +6,7 @@ const TrackCourses = (props) => {
   const [course, setCourse] = useState([]);
   const getData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online/admin/course/all/${props.trackid}`,
+      `http://api.motiongraphic.tech/admin/course/all/${props.trackid}`,
       {
         method: "GET",
         headers: {

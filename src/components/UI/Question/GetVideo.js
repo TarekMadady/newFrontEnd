@@ -9,7 +9,7 @@ const GetVideo = (props) => {
   }, []);
   const videoData = async () => {
     const response = await fetch(
-      "https://testb.oneproduct.online/admin/video/all",
+      "http://api.motiongraphic.tech/admin/video/all",
       {
         method: "GET",
         headers: {

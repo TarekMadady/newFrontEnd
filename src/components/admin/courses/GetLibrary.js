@@ -7,7 +7,7 @@ const GetLibrary = ({ id }) => {
   const [lib, setLib] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online/admin/library/all/${id}`,
+      `http://api.motiongraphic.tech/admin/library/all/${id}`,
       {
         method: "GET",
         headers: {

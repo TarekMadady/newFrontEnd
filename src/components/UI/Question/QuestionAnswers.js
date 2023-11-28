@@ -9,7 +9,7 @@ const QuestionAnswers = (props) => {
 
   const getAnswers = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online/admin/question/answer/${props.qid}`,
+      `http://api.motiongraphic.tech/admin/question/answer/${props.qid}`,
       {
         method: "GET",
         headers: {

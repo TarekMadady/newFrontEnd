@@ -9,7 +9,7 @@ const Libraryes = () => {
   }, []);
   const LibrAll = async () => {
     const respon = await fetch(
-      "https://testb.oneproduct.online/admin/library/all",
+      "http://api.motiongraphic.tech/admin/library/all",
       {
         method: "GET",
         headers: {

@@ -9,7 +9,7 @@ const Trackes = (props) => {
   }, []);
   const getData = async () => {
     const respons = await fetch(
-      "https://testb.oneproduct.online/admin/track/all",
+      "http://api.motiongraphic.tech/admin/track/all",
       {
         method: "GET",
         headers: {

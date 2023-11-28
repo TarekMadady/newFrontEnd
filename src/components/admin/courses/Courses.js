@@ -9,7 +9,7 @@ const Courses = () => {
   }, []);
   const getAllCourse = async () => {
     const response = await fetch(
-      "https://testb.oneproduct.online/admin/course/all",
+      "http://api.motiongraphic.tech/admin/course/all",
       {
         method: "GET",
         headers: {

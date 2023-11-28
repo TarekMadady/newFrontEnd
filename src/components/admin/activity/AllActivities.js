@@ -9,7 +9,7 @@ const AllActivities = () => {
   }, []);
   const getActiv = async () => {
     const respon = await fetch(
-      "https://testb.oneproduct.online/admin/activity/all",
+      "http://api.motiongraphic.tech/admin/activity/all",
       {
         method: "GET",
         headers: {

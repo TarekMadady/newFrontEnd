@@ -11,7 +11,7 @@ const DeleteActiv = () => {
   }, []);
   const removeActive = async () => {
     const respon = await fetch(
-      `https://testb.oneproduct.online/admin/activity/${actid}`,
+      `http://api.motiongraphic.tech/admin/activity/${actid}`,
       {
         method: "DELETE",
         headers: {

@@ -5,7 +5,7 @@ const CourseTarget = ({ id }) => {
   const [target, setTarget] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online/admin/course/details/${id}`,
+      `http://api.motiongraphic.tech/admin/course/details/${id}`,
       {
         method: "GET",
         headers: {

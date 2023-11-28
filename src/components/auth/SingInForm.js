@@ -13,7 +13,7 @@ const SignInForm = () => {
       email: userEmail,
       password: userPass,
     };
-    fetch("https://testb.oneproduct.online/auth/signin", {
+    fetch("http://api.motiongraphic.tech/auth/signin", {
       method: "POST",
       body: JSON.stringify(sendData),
       headers: {

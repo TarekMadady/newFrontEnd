@@ -12,7 +12,7 @@ const ShowExam = () => {
   }, []);
   const SearchExam = async () => {
     const response = await fetch(
-      "https://testb.oneproduct.online/admin/exam/all",
+      "http://api.motiongraphic.tech/admin/exam/all",
       {
         method: "GET",
         headers: {

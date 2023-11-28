@@ -5,7 +5,7 @@ const ShowVideo = (props) => {
   const [videoData, setVideoData] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online/admin/video/details/${props.id}`,
+      `http://api.motiongraphic.tech/admin/video/details/${props.id}`,
       {
         method: "GET",
         headers: {
@@ -32,7 +32,7 @@ const ShowVideo = (props) => {
           <div className="card-body">
             <video controls className="w-100">
               <source
-                src={`https://testb.oneproduct.online/admin/video/show/${props.id}`}
+                src={`http://api.motiongraphic.tech/admin/video/show/${props.id}`}
                 type="video/mp4"
               />
             </video>{" "}

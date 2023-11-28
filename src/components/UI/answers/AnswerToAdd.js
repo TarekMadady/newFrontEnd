@@ -25,7 +25,7 @@ const AnswerToAdd = (props) => {
     formData.append("degree", AnsDegree.current.value);
     formData.append("result", AnsResult.current.checked);
     // console.log(AnsResult.current.checked);
-    fetch(`https://testb.oneproduct.online/admin/answer/add/${props.id}`, {
+    fetch(`http://api.motiongraphic.tech/admin/answer/add/${props.id}`, {
       method: "POST",
       body: formData,
       headers: {

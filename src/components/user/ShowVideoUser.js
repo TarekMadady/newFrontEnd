@@ -13,7 +13,7 @@ const ShowVideoUser = () => {
           <div className="col-6 mx-auto">
             <video controls className="w-100">
               <source
-                src={`https://testb.oneproduct.online/video/show/${vid}`}
+                src={`http://api.motiongraphic.tech/video/show/${vid}`}
                 type="video/mp4"
               />
             </video>{" "}

@@ -17,7 +17,7 @@ const CourseDetails = ({ courid }) => {
   const fetchCourseData = async () => {
     try {
       const response = await fetch(
-        `https://testb.oneproduct.online/course/${courid}`,
+        `http://api.motiongraphic.tech/course/${courid}`,
         {
           method: "GET",
           headers: {
@@ -59,7 +59,7 @@ const CourseDetails = ({ courid }) => {
               videoid={c.video}
               cl={() =>
                 showVideo(
-                  `https://testb.oneproduct.online/video/show/${c.video}`
+                  `http://api.motiongraphic.tech/video/show/${c.video}`
                 )
               }
               vi={getvid}
@@ -158,7 +158,7 @@ export default CourseDetails;
 
 //   const fetchCourseData = async () => {
 //     try {
-//       const response = await fetch(`https://testb.oneproduct.online/course/${courid}`, {
+//       const response = await fetch(`http://api.motiongraphic.tech/course/${courid}`, {
 //         method: "GET",
 //         headers: {
 //           Authorization: `${token}`,
@@ -193,7 +193,7 @@ export default CourseDetails;
 //               key={c._id}
 //               videoid={c.video}
 //               cl={() =>
-//                 showVideo(`https://testb.oneproduct.online/video/show/${c.video}`)
+//                 showVideo(`http://api.motiongraphic.tech/video/show/${c.video}`)
 //               }
 //             />
 //           ))}

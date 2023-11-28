@@ -7,7 +7,7 @@ const UserOneTrack = ({ trackid }) => {
   const [tra, setTra] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online/track/details/${trackid}`,
+      `http://api.motiongraphic.tech/track/details/${trackid}`,
       {
         method: "GET",
         headers: {

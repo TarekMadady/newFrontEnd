@@ -15,7 +15,7 @@ const PreExam2D = () => {
 
   const GetData = async () => {
     const response = await fetch(
-      "https://testb.oneproduct.online/exam/preexam2d",
+      "http://api.motiongraphic.tech/exam/preexam2d",
       {
         method: "Get",
         headers: {

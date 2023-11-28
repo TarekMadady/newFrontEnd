@@ -7,7 +7,7 @@ const MCourseActive = ({ Actid }) => {
   const [myAdj, setMyAdj] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://testb.oneproduct.online/activ/${Actid}`,
+      `http://api.motiongraphic.tech/activ/${Actid}`,
       {
         method: "GET",
         headers: {
