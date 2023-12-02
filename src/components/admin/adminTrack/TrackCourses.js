@@ -27,39 +27,38 @@ const TrackCourses = (props) => {
       <div className="col-12">
         <div className="card">
           <div className="card-header">
-            <h5 className="card-title"> كورسات المسار </h5>{" "}
-          </div>{" "}
+            <h5 className="card-title"> كورسات المسار </h5>
+          </div>
           <div className="card-body">
             <table className="table table-hover my-0">
               <thead className="">
                 <tr>
-                  <th> اسم الكورس </th> <th> عدد الساعات </th>{" "}
-                  <th> عدد الفديوهات </th> <th> تاريخ الاضافة </th>{" "}
-                  <th> بينات الكورس </th>{" "}
-                </tr>{" "}
-              </thead>{" "}
+                  <th> اسم الكورس </th> <th> عدد الساعات </th>
+                  <th> عدد الفديوهات </th> <th> تاريخ الاضافة </th>
+                  <th> بينات الكورس </th>
+                </tr>
+              </thead>
               <tbody>
-                {" "}
                 {course &&
                   course.map((cour) => (
                     <tr key={cour.id}>
-                      <td> {cour.name} </td> <td> {cour.Hour} </td>{" "}
-                      <td> {cour.videoes} </td> <td> {cour.CreateDate} </td>{" "}
+                      <td> {cour.name} </td> <td> {cour.Hour} </td>
+                      <td> {cour.videoes} </td> <td> {cour.CreateDate} </td>
                       <td>
                         <Link
                           className=""
                           to={`/admin/course/details/${cour.id}`}
                         >
-                          عرض{" "}
-                        </Link>{" "}
-                      </td>{" "}
+                          عرض
+                        </Link>
+                      </td>
                     </tr>
-                  ))}{" "}
-              </tbody>{" "}
-            </table>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+                  ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -33,13 +33,12 @@ const ATrack = (props) => {
       onChange={selecthandle}
       defaultValue={"DEFAULT"}
     >
-      <option value="DEFAULT"> اختر مسار </option>{" "}
+      <option value="DEFAULT"> اختر مسار </option>
       {track.map((tr) => (
         <option key={tr._id} value={tr._id}>
-          {" "}
-          {tr.trackName}{" "}
+          {tr.trackName}
         </option>
-      ))}{" "}
+      ))}
     </select>
   );
 };

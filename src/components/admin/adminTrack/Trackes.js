@@ -23,7 +23,6 @@ const Trackes = (props) => {
 
   return (
     <div className="accordion">
-      {" "}
       {trackes.map((track) => (
         <TrackCard
           key={track._id}
@@ -32,7 +31,7 @@ const Trackes = (props) => {
           About={track.About_track}
           tid={track._id}
         />
-      ))}{" "}
+      ))}
     </div>
   );
 };

@@ -22,10 +22,9 @@ const Courses = () => {
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           {/* <h2>مسارات</h2> */}
-          <p> المديولات التعليمية </p>{" "}
+          <p> المديولات التعليمية </p>
         </div>
         <div className="row" data-aos="zoom-in" data-aos-delay="100">
-          {" "}
           {cours &&
             cours.map((m) => (
               <CourseCard
@@ -33,10 +32,10 @@ const Courses = () => {
                 tname={m.trackName}
                 tabout={m.About_track}
               />
-            ))}{" "}
+            ))}
           {/* <CourseCard /> */}
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
     </section>
   );
 };

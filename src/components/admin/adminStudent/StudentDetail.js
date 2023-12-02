@@ -33,7 +33,7 @@ const StudentDetail = (props) => {
         active={student.active}
         prexam={student.prexam}
         exam={student.exams}
-      />{" "}
+      />
     </main>
   );
 };

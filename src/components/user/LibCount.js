@@ -26,20 +26,19 @@ const LibCount = ({ cid }) => {
     <div className="container">
       <div className="row">
         <div className="col-6">
-          {" "}
           {mlib &&
             mlib.map((l, indx) => (
               <Libraries key={indx} nu={indx + 1} lid={l.libray} />
-            ))}{" "}
-        </div>{" "}
+            ))}
+        </div>
         <div className="col-6">
           <img
             src="/images/library.gif"
             alt="insta"
             className="image-fluid w-100"
           />
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
     </div>
   );
 };

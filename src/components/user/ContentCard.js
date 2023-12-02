@@ -41,13 +41,13 @@ const ContentCard = ({ cid, coun }) => {
             onClick={showVid}
             to={`/show/video/${cid}`}
           >
-            {videoData && videoData.videoTitle}{" "}
-          </Link>{" "}
-        </div>{" "}
+            {videoData && videoData.videoTitle}
+          </Link>
+        </div>
         {/* <div className="col-9">
                 <ShowVideoUser id={cid} />
-              </div> */}{" "}
-      </div>{" "}
+              </div> */}
+      </div>
     </>
   );
 };

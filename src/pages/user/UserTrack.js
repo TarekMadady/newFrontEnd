@@ -24,9 +24,8 @@ const UserTrack = () => {
 
   return (
     <div className="container mt-3">
-      {" "}
       {tracks &&
-        tracks.map((t) => <UserOneTrack key={t._id} trackid={t.track} />)}{" "}
+        tracks.map((t) => <UserOneTrack key={t._id} trackid={t.track} />)}
     </div>
   );
 };

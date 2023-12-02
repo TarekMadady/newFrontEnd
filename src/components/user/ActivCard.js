@@ -66,37 +66,35 @@ const ActivCard = ({ acid, nu }) => {
         <div className="row">
           <div className="col-9 mx-auto">
             <Link className="fs-2" onClick={showAddActive}>
-              {" "}
-              {act && act.title}{" "}
-            </Link>{" "}
+              {act && act.title}
+            </Link>
             <div>
-              {" "}
               {showAct ? (
                 <div>
                   <Link onClick={hide}>
-                    <h2> X </h2>{" "}
-                  </Link>{" "}
+                    <h2> X </h2>
+                  </Link>
                   <form onSubmit={handleSendActive}>
                     <label htmlFor="addActive" className="form-label">
-                      ارسل الملف المطلوب{" "}
-                    </label>{" "}
+                      ارسل الملف المطلوب
+                    </label>
                     <input
                       type="file"
                       id="addActive"
                       ref={actFile}
                       className="form-control"
                       onChange={handleFile}
-                    />{" "}
+                    />
                     <button className="btn btn-primary" type="submit">
-                      اضافة الملف{" "}
-                    </button>{" "}
-                  </form>{" "}
+                      اضافة الملف
+                    </button>
+                  </form>
                 </div>
               ) : (
                 <> </>
-              )}{" "}
-            </div>{" "}
-          </div>{" "}
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -22,7 +22,6 @@ const Track2D = () => {
 
   return (
     <div className="d-flex justify-content-around flex-wrap">
-      {" "}
       {trackData &&
         trackData.map((track) => (
           <TrackCard
@@ -32,7 +31,7 @@ const Track2D = () => {
             id={track._id}
             about={track.About_track}
           />
-        ))}{" "}
+        ))}
     </div>
   );
 };

@@ -80,20 +80,20 @@ const CourseAdd = (props) => {
     <form onSubmit={submitHandler}>
       <div className="mb-3">
         <label htmlFor="cname" className="form-label">
-          اسم الكورس{" "}
-        </label>{" "}
-        <input type="text" id="cname" className="form-control" ref={cName} />{" "}
-      </div>{" "}
+          اسم الكورس
+        </label>
+        <input type="text" id="cname" className="form-control" ref={cName} />
+      </div>
       <div className="mb-3">
         <label htmlFor="auth" className="form-label">
-          اسم المدرب{" "}
-        </label>{" "}
-        <input type="text" className="form-control" id="auth" ref={Author} />{" "}
-      </div>{" "}
+          اسم المدرب
+        </label>
+        <input type="text" className="form-control" id="auth" ref={Author} />
+      </div>
       <div className="mb-3">
         <label htmlFor="ab" className="form-label">
-          معلومات عن الكورس{" "}
-        </label>{" "}
+          معلومات عن الكورس
+        </label>
         <textarea
           className="form-control"
           placeholder="Leave a comment here"
@@ -102,11 +102,11 @@ const CourseAdd = (props) => {
           style={{
             height: "100px",
           }}
-        ></textarea>{" "}
-      </div>{" "}
+        ></textarea>
+      </div>
       <div className="mb-3">
-        <label className="form-label"> هل هناك امتحان شرط للكورس </label>{" "}
-      </div>{" "}
+        <label className="form-label"> هل هناك امتحان شرط للكورس </label>
+      </div>
       <div className="form-check">
         <input
           className="form-check-input"
@@ -115,10 +115,10 @@ const CourseAdd = (props) => {
           id="chtrue"
           ref={conditiontrue}
           onChange={changeCondition}
-        />{" "}
+        />
         <label className="form-check-label" htmlFor="chtrue">
-          True{" "}
-        </label>{" "}
+          True
+        </label>
         <br />
         <input
           className="form-check-input"
@@ -127,66 +127,59 @@ const CourseAdd = (props) => {
           ref={conditionfalse}
           id="chfalse"
           onChange={changeCondition}
-        />{" "}
+        />
         <label className="form-check-label" htmlFor="chfalse">
-          False{" "}
-        </label>{" "}
-      </div>{" "}
-      <div className="mb-3">
-        {" "}
-        {mystate ? <GetExam examID={getEx} /> : <></>}{" "}
-      </div>{" "}
+          False
+        </label>
+      </div>
+      <div className="mb-3">{mystate ? <GetExam examID={getEx} /> : <></>}</div>
       <div className="mb-3">
         <div className="container-fluid">
           <div className="row">
             <div className="col-6">
               <div>
                 <ul className="list-group list-group-flush">
-                  {" "}
                   {instruc.map((inst) => (
                     <li key={Math.random()} className="list-group-item">
-                      {" "}
-                      {inst}{" "}
+                      {inst}
                     </li>
-                  ))}{" "}
-                </ul>{" "}
-              </div>{" "}
+                  ))}
+                </ul>
+              </div>
               <input
                 type="text"
                 className="fom-control"
                 placeholder="التعليمات الخاصة بالكورس"
                 ref={instruct}
-              />{" "}
+              />
               <button onClick={addInstruct} className="btn btn-success">
-                اضافة{" "}
-              </button>{" "}
-            </div>{" "}
+                اضافة
+              </button>
+            </div>
             <div className="col-6">
               <div>
                 <ul className="list-group list-group-flush">
-                  {" "}
                   {target.map((tar) => (
                     <li key={Math.random()} className="list-group-item">
-                      {" "}
-                      {tar}{" "}
+                      {tar}
                     </li>
-                  ))}{" "}
-                </ul>{" "}
-              </div>{" "}
+                  ))}
+                </ul>
+              </div>
               <input
                 type="text"
                 placeholder="الاهداف الخاصة بالكورس"
                 className="form-control"
                 ref={refTarget}
-              />{" "}
+              />
               <button onClick={addTarget} className="btn btn-success">
-                اضافة{" "}
-              </button>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
-      <button className="btn btn-primary"> اضافة الكورس </button>{" "}
+                اضافة
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button className="btn btn-primary"> اضافة الكورس </button>
     </form>
   );
 };

@@ -52,33 +52,33 @@ const AnswerToAdd = (props) => {
           <div className="card">
             <div className="card-header">
               <Link className="float-end" onClick={CL}>
-                X{" "}
-              </Link>{" "}
-              <h5 className="card-title mb-0"> اضافة اجابة </h5>{" "}
-            </div>{" "}
+                X
+              </Link>
+              <h5 className="card-title mb-0"> اضافة اجابة </h5>
+            </div>
             <div className="card-body">
               <form onSubmit={submitQuestionForm}>
                 <div className="mb-3">
                   <label className="form-label" htmlFor="ansTitle">
-                    الاجابة{" "}
-                  </label>{" "}
+                    الاجابة
+                  </label>
                   <input
                     type="text"
                     placeholder="Answer Title"
                     className="form-control"
                     id="ansTitle"
                     ref={AnsTitle}
-                  />{" "}
-                </div>{" "}
+                  />
+                </div>
                 <div className="mb-3">
                   <label className="form-label" htmlFor="ansImage">
-                    صورة الاجابة{" "}
-                  </label>{" "}
+                    صورة الاجابة
+                  </label>
                   <input
                     type="file"
                     ref={AnsInput}
                     onChange={HandleImageChange}
-                  />{" "}
+                  />
                   {ansImage ? (
                     <img
                       src={URL.createObjectURL(ansImage)}
@@ -91,19 +91,19 @@ const AnswerToAdd = (props) => {
                     />
                   ) : (
                     <img src="" alt="" />
-                  )}{" "}
-                </div>{" "}
+                  )}
+                </div>
                 <div className="mb-3">
                   <label className="form-label" htmlFor="degreeN">
-                    درجة السؤال{" "}
-                  </label>{" "}
+                    درجة السؤال
+                  </label>
                   <input
                     type="number"
                     className="form-control"
                     id="degreeN"
                     ref={AnsDegree}
-                  />{" "}
-                </div>{" "}
+                  />
+                </div>
                 <div className="mb-3">
                   <div className="form-check">
                     <input
@@ -113,11 +113,11 @@ const AnswerToAdd = (props) => {
                       id="ans01"
                       value={true}
                       ref={AnsResult}
-                    />{" "}
+                    />
                     <label className="form-check-label" htmlFor="ans01">
-                      True{" "}
-                    </label>{" "}
-                  </div>{" "}
+                      True
+                    </label>
+                  </div>
                   <div className="form-check">
                     <input
                       className="form-check-input"
@@ -125,20 +125,20 @@ const AnswerToAdd = (props) => {
                       name="ansResult"
                       id="ans01"
                       value={false}
-                    />{" "}
+                    />
                     <label className="form-check-label" htmlFor="ans02">
-                      false{" "}
-                    </label>{" "}
-                  </div>{" "}
-                </div>{" "}
+                      false
+                    </label>
+                  </div>
+                </div>
                 <button type="submit" className="btn btn-primary">
-                  اضافة الاجابة{" "}
-                </button>{" "}
-              </form>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+                  اضافة الاجابة
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

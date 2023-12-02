@@ -32,32 +32,30 @@ const QuestionAnswers = (props) => {
 
   return (
     <div>
-      <Link onClick={gen}> اغلاق </Link>{" "}
+      <Link onClick={gen}> اغلاق </Link>
       <table className="table table-hover my-0" dir="rtl">
         <thead>
           <tr>
-            <th> الاجابة </th> <th> صح / خطاء </th> <th> الدرجة </th>{" "}
-          </tr>{" "}
-        </thead>{" "}
+            <th> الاجابة </th> <th> صح / خطاء </th> <th> الدرجة </th>
+          </tr>
+        </thead>
         <tbody>
-          {" "}
           {answerData &&
             answerData.map((answer) => (
               <tr>
-                <td> {answer.answerTitle} </td>{" "}
+                <td> {answer.answerTitle} </td>
                 <td>
-                  {" "}
                   {answer.answerResult ? (
                     <img src={ok} alt="not good" width="24" height="24" />
                   ) : (
                     <img src={Danger} alt="not good" width="24" height="24" />
-                  )}{" "}
-                </td>{" "}
-                <td> {answer.answerDegree} </td>{" "}
+                  )}
+                </td>
+                <td> {answer.answerDegree} </td>
               </tr>
-            ))}{" "}
-        </tbody>{" "}
-      </table>{" "}
+            ))}
+        </tbody>
+      </table>
     </div>
   );
 };

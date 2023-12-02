@@ -46,7 +46,7 @@ const PreExam3D = () => {
         examDegree={examDegree}
         Questioncount={examQuestion}
         allQuestions={questions}
-      />{" "}
+      />
     </>
   );
 };

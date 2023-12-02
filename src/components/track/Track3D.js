@@ -22,7 +22,6 @@ const Track3D = () => {
 
   return (
     <div>
-      {" "}
       {trackData &&
         trackData.map((track) => (
           <TrackCard
@@ -32,7 +31,7 @@ const Track3D = () => {
             id={track._id}
             about={track.About_track}
           />
-        ))}{" "}
+        ))}
     </div>
   );
 };

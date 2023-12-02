@@ -122,7 +122,7 @@ const StudentD = (props) => {
                 />
                 <div className="flex-grow-1">
                   <small className="float-end text-navy">5m ago</small>
-                  <strong>Vanessa Tucker</strong> started following{" "}
+                  <strong>Vanessa Tucker</strong> started following 
                   <strong>Christina Mason</strong>
                   <br />
                   <small className="text-muted">Today 7:51 pm</small>
@@ -140,7 +140,7 @@ const StudentD = (props) => {
                 />
                 <div className="flex-grow-1">
                   <small className="float-end text-navy">30m ago</small>
-                  <strong>Charles Hall</strong> posted something on{" "}
+                  <strong>Charles Hall</strong> posted something on 
                   <strong>Christina Mason</strong>'s timeline
                   <br />
                   <small className="text-muted">Today 7:21 pm</small>
@@ -186,7 +186,7 @@ const StudentD = (props) => {
                 />
                 <div className="flex-grow-1">
                   <small className="float-end text-navy">3h ago</small>
-                  <strong>William Harris</strong> posted two photos on{" "}
+                  <strong>William Harris</strong> posted two photos on 
                   <strong>Christina Mason</strong>'s timeline
                   <br />
                   <small className="text-muted">Today 5:12 pm</small>
@@ -223,7 +223,7 @@ const StudentD = (props) => {
                 />
                 <div className="flex-grow-1">
                   <small className="float-end text-navy">1d ago</small>
-                  <strong>William Harris</strong> started following{" "}
+                  <strong>William Harris</strong> started following 
                   <strong>Christina Mason</strong>
                   <br />
                   <small className="text-muted">Yesterday 3:12 pm</small>
@@ -275,7 +275,7 @@ const StudentD = (props) => {
                 />
                 <div className="flex-grow-1">
                   <small className="float-end text-navy">1d ago</small>
-                  <strong>Charles Hall</strong> started following{" "}
+                  <strong>Charles Hall</strong> started following 
                   <strong>Christina Mason</strong>
                   <br />
                   <small className="text-muted">Yesterdag 1:51 pm</small>

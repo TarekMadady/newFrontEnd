@@ -28,16 +28,14 @@ const UserOneTrack = ({ trackid }) => {
   return (
     <div className="row">
       <h5 className="card-title mb-0 text-center fs-1 text-danger bg-white p-2 border-1 shadow fw-bold text-primary mb-3 ">
-        {" "}
-        {tra && tra.trackName}{" "}
-      </h5>{" "}
-      {/* <h5 className="text-center h3">{tra && tra.About_track}</h5> */}{" "}
+        {tra && tra.trackName}
+      </h5>
+      {/* <h5 className="text-center h3">{tra && tra.About_track}</h5> */}
       <div className="container mt-3">
-        {" "}
         {trackD &&
-          trackD.map((t) => <CourseCard key={t._id} courid={t.course} />)}{" "}
+          trackD.map((t) => <CourseCard key={t._id} courid={t.course} />)}
         <hr />
-      </div>{" "}
+      </div>
     </div>
     // </div>
     // </div>

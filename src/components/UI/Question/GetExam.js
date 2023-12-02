@@ -31,17 +31,16 @@ const GetExam = (props) => {
 
   return (
     <select className="form-control" ref={exid} onChange={changevalue}>
-      <option value="0"> اختر امتحان </option>{" "}
+      <option value="0"> اختر امتحان </option>
       {exam.length === 0 ? (
         <option> مفيش امتحان </option>
       ) : (
         exam.map((exm) => (
           <option key={exm._id} value={exm._id}>
-            {" "}
-            {exm.examname}{" "}
+            {exm.examname}
           </option>
         ))
-      )}{" "}
+      )}
     </select>
   );
 };

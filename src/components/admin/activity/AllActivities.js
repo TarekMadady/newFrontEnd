@@ -22,7 +22,6 @@ const AllActivities = () => {
   };
   return (
     <>
-      {" "}
       {activ.length > 0 ? (
         activ.map((act) => (
           <ActivityCard
@@ -34,7 +33,7 @@ const AllActivities = () => {
         ))
       ) : (
         <div> No Active exist </div>
-      )}{" "}
+      )}
     </>
   );
 };

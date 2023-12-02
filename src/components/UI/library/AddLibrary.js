@@ -37,33 +37,33 @@ const AddLibrary = ({ id }) => {
     <form onSubmit={create}>
       <div className="mb-3">
         <label className="form-label" htmlFor="intitle">
-          العنوان{" "}
-        </label>{" "}
+          العنوان
+        </label>
         <input
           type="text"
           className="form-control"
           id="intitle"
           ref={libTitle}
-        />{" "}
-      </div>{" "}
+        />
+      </div>
       <div className="mb-3">
         <label className="form-label" htmlFor="inurl">
-          الرابط على الانترنت{" "}
-        </label>{" "}
-        <input type="url" className="form-control" id="inurl" ref={liburl} />{" "}
-      </div>{" "}
+          الرابط على الانترنت
+        </label>
+        <input type="url" className="form-control" id="inurl" ref={liburl} />
+      </div>
       <div className="mb-3">
         <label className="form-label" htmlFor="indesc">
-          شرح الرابط{" "}
-        </label>{" "}
+          شرح الرابط
+        </label>
         <textarea
           className="form-control"
           id="indesc"
           rows="3"
           ref={libdesc}
-        ></textarea>{" "}
-      </div>{" "}
-      <button className="btn btn-primary"> اضافة </button>{" "}
+        ></textarea>
+      </div>
+      <button className="btn btn-primary"> اضافة </button>
     </form>
   );
 };

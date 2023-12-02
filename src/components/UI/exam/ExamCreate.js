@@ -32,60 +32,60 @@ const ExamCreate = () => {
         // navigate("/admin/exam", {
         //   replace: true,
         // });
-        window.location.reload(false);
+        window.location.reload();
       });
   }
   return (
     <form onSubmit={sendData} className="">
       <div className="mb-3">
         <label htmlFor="eName" className="form-label">
-          اسم الامتحان{" "}
-        </label>{" "}
+          اسم الامتحان
+        </label>
         <input
           type="text"
           className="form-control"
           placeholder="Exam Name"
           id="eName"
           ref={eName}
-        />{" "}
-      </div>{" "}
+        />
+      </div>
       <div className="mb-3">
         <label htmlFor="eDegree" className="form-label">
-          درجة الامتحان{" "}
-        </label>{" "}
+          درجة الامتحان
+        </label>
         <input
           type="number"
           className="form-control"
           placeholder="20"
           id="eDegree"
           ref={eDegree}
-        />{" "}
-      </div>{" "}
+        />
+      </div>
       <div className="mb-3">
         <label className="form-label" htmlFor="sucPersent">
-          نسبة النجاح{" "}
-        </label>{" "}
+          نسبة النجاح
+        </label>
         <input
           type="number"
           id="sucPersent"
           className="form-control"
           ref={sucPersnet}
-        />{" "}
-      </div>{" "}
+        />
+      </div>
       <div className="mb-3">
         <label className="form-label" htmlFor="Qcount">
-          عدد اسئلة الامتحان{" "}
-        </label>{" "}
+          عدد اسئلة الامتحان
+        </label>
         <input
           type="number"
           id="Qcount"
           className="form-control"
           ref={exQCount}
-        />{" "}
-      </div>{" "}
+        />
+      </div>
       <button className="btn btn-primary" type="submit">
-        اضافة الامتحان{" "}
-      </button>{" "}
+        اضافة الامتحان
+      </button>
     </form>
   );
 };

@@ -44,44 +44,43 @@ const ShowExamResult = (props) => {
         <div className="row vh-100">
           <div className="col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto d-table h-100">
             <div className="text-center mt-4" dir="rtl">
-              <h1 className="h2"> نتيجة الإختبار القبلي </h1>{" "}
-            </div>{" "}
+              <h1 className="h2"> نتيجة الإختبار القبلي </h1>
+            </div>
             <div className="card" dir="rtl">
               <div className="vard-body">
                 <div className="m-sm-3">
                   <div className="d-flex flex-column">
                     <div className="d-flex my-2 fs-2">
-                      <div className="ms-2"> تاريخ الامتحان </div>{" "}
-                      <div> {examDate} </div>{" "}
-                    </div>{" "}
+                      <div className="ms-2"> تاريخ الامتحان </div>
+                      <div> {examDate} </div>
+                    </div>
                     <div className="d-flex my-2 fs-2">
-                      <div> درجة الامتحان </div> <div> {examDegree} </div>{" "}
-                    </div>{" "}
+                      <div> درجة الامتحان </div> <div> {examDegree} </div>
+                    </div>
                     <div className="d-flex my-2 fs-2">
-                      <div> درجة الطالب </div>{" "}
-                      <div> {Math.floor((degree * examDegree) / 100)} % </div>{" "}
-                    </div>{" "}
+                      <div> درجة الطالب </div>
+                      <div> {Math.floor((degree * examDegree) / 100)} % </div>
+                    </div>
                     <div className="d-flex my-2">
-                      {" "}
                       {examtitle && examtitle === "preExam2D" ? (
                         <Link
                           to="/track/track2d"
                           className="btn btn-primary fs-3"
                         >
-                          ابدء المديولات التعليمية{" "}
+                          ابدء المديولات التعليمية
                         </Link>
                       ) : (
                         <Link to="/track3D" className="btn btn-primary">
-                          ابدء المديولات التعليمية{" "}
+                          ابدء المديولات التعليمية
                         </Link>
-                      )}{" "}
-                    </div>{" "}
-                  </div>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* <div className="container" dir="rtl">
               <div className="d-flex flex-column">
@@ -111,7 +110,7 @@ const ShowExamResult = (props) => {
                   مسار 3D
                 </Link>
               )}
-            </div> */}{" "}
+            </div> */}
     </main>
   );
 };

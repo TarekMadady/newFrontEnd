@@ -4,7 +4,7 @@ const Copyright = () => {
   return (
     <div className="me-md-auto text-center text-md-start">
       <div className="copyright">
-        &copy; Copyright{" "}
+        &copy; Copyright
         <strong>
           <span>Ghada</span>
         </strong>

@@ -123,7 +123,6 @@ const Exam = ({
   };
   return (
     <>
-      {" "}
       {showPanel ? (
         <main className="d-flex w-100">
           <div className="container d-flex flex-column">
@@ -138,11 +137,10 @@ const Exam = ({
                         fontWeight: "bold",
                       }}
                     >
-                      {" "}
-                      الاختبار القبلى{" "}
-                    </h1>{" "}
-                    {/* <p className="lead">امتحان قبلى</p> */}{" "}
-                  </div>{" "}
+                      الاختبار القبلى
+                    </h1>
+                    {/* <p className="lead">امتحان قبلى</p> */}
+                  </div>
                   <div className="card">
                     <div className="card-body">
                       <div className="m-sm-3">
@@ -150,79 +148,75 @@ const Exam = ({
                           <p className="fs-2">
                             <strong className="text-primary h1 fw-bold">
                               الهدف من الإختبار:
-                            </strong>{" "}
+                            </strong>
                             <br />
                             يهدف هذا الإختبار إلى قياس الجوانب المعرفية لمهارات
                             انتاج الرسومات المتحركة ثنائية وثلاثية الأبعاد لدى
                             طلاب كلية التربية. <br />
                             <strong className="text-primary h1 fw-bold">
                               تعليمات الإختبار:
-                            </strong>{" "}
+                            </strong>
                             <br />
                             <ol dir="rtl">
                               <li>
-                                {" "}
                                 يحتوى هذا الإختبار على جزئين؛ جزء خاص بأسئلة
                                 الإختيار من متعدد، وجزء خاص لأسئلة الصواب
-                                والخطأ.{" "}
-                              </li>{" "}
+                                والخطأ.
+                              </li>
+                              <li>سوف يتم الإجابة بإستخدام مؤشر الفارة</li>
+                              <li>-مدة الإختبار 30 دقيقة </li>
                               <li>
-                                سوف يتم الإجابة بإستخدام مؤشر الفارة{" "}
-                              </li>{" "}
-                              <li>-مدة الإختبار 30 دقيقة </li>{" "}
-                              <li>
-                                لا يمكن تعديل الإجابات فى الإختبار بعد تسليمها{" "}
-                              </li>{" "}
+                                لا يمكن تعديل الإجابات فى الإختبار بعد تسليمها
+                              </li>
                               <li>
                                 بعد الإنتهاء من حل السؤال انقر على زر التالي
-                                للإنتقال للسؤال التالي{" "}
-                              </li>{" "}
+                                للإنتقال للسؤال التالي
+                              </li>
                               <li>
                                 بعد لإنتهاء من الإجابة عن جميع الأسئلة انقر فوق
-                                زر انهاء الإختبار؛ لتظهر نتيجة الإختبار{" "}
-                              </li>{" "}
-                              <li>نسبة النجاح فى الإختبار من 85 %</li>{" "}
-                            </ol>{" "}
-                          </p>{" "}
+                                زر انهاء الإختبار؛ لتظهر نتيجة الإختبار
+                              </li>
+                              <li>نسبة النجاح فى الإختبار من 85 %</li>
+                            </ol>
+                          </p>
                           <p className="fs-3">
                             <strong className="text-primary fw-bold">
-                              درجة الامتحان{" "}
-                            </strong>{" "}
-                            {examDegree}{" "}
-                          </p>{" "}
+                              درجة الامتحان
+                            </strong>
+                            {examDegree}
+                          </p>
                           <p className="fs-3">
                             <strong className="text-primary fw-bold">
-                              عدد الاسئلة{" "}
-                            </strong>{" "}
-                            {Questioncount}{" "}
-                          </p>{" "}
+                              عدد الاسئلة
+                            </strong>
+                            {Questioncount}
+                          </p>
                           <button
                             className="btn btn-primary fs-3"
                             onClick={ChangePanel}
                           >
-                            ابدء & nbsp; الاختبار القبلى{" "}
-                          </button>{" "}
-                        </div>{" "}
-                      </div>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                </div>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
+                            ابدء & nbsp; الاختبار القبلى
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       ) : (
         <div>
-          {" "}
-          {/* <ExamStart examName={examname} QuestionCount={items.length} /> */}{" "}
+          {/* <ExamStart examName={examname} QuestionCount={items.length} /> */}
           <ExamBody
             key={Math.floor(Math.random() * 1e9)}
             data={allQuestions}
             evn={addQuestionAndAnswer}
             ad={sendData}
-          />{" "}
+          />
         </div>
-      )}{" "}
+      )}
     </>
   );
 };

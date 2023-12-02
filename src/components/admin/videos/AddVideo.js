@@ -41,39 +41,39 @@ const AddVideo = (props) => {
     <div className="card">
       <div className="card-header">
         <h5 className="float-end">
-          <Link onClick={hide}> X </Link>{" "}
-        </h5>{" "}
-        <h5 className="card-title"> اضافة فيديو </h5>{" "}
-      </div>{" "}
+          <Link onClick={hide}> X </Link>
+        </h5>
+        <h5 className="card-title"> اضافة فيديو </h5>
+      </div>
       <div className="card-body">
         <form onSubmit={addvideoData}>
           <div className="mb-3">
             <label className="form-label" htmlFor="vtitle">
-              عنوان الفيدو{" "}
-            </label>{" "}
+              عنوان الفيدو
+            </label>
             <input
               type="text"
               id="vtitle"
               ref={title}
               className="form-control"
             />
-          </div>{" "}
+          </div>
           <div className="mb-3">
             <label className="form-label" htmlFor="vfile">
-              ملف الفيديو{" "}
-            </label>{" "}
+              ملف الفيديو
+            </label>
             <input
               type="file"
               id="vfile"
               ref={inputRef}
               onChange={HandleImageChange}
-            />{" "}
-          </div>{" "}
+            />
+          </div>
           <button type="submit" className="btn btn-primary">
-            اضافة الفيديو{" "}
-          </button>{" "}
-        </form>{" "}
-      </div>{" "}
+            اضافة الفيديو
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

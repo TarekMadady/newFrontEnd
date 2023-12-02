@@ -16,10 +16,10 @@ const ShowVideoUser = () => {
                 src={`http://api.motiongraphic.tech/video/show/${vid}`}
                 type="video/mp4"
               />
-            </video>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+            </video>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

@@ -27,15 +27,15 @@ const GetVideo = (props) => {
   return (
     <select>
       <option value="0" ref={videoid} onChange={Showid}>
-        اخترالفيديو{" "}
-      </option>{" "}
+        اخترالفيديو
+      </option>
       {videos.length > 0 ? (
         videos.map((video) => (
           <option value={video._id}> {video.title} </option>
         ))
       ) : (
         <option value="-1"> مفيش فيديوهات </option>
-      )}{" "}
+      )}
     </select>
   );
 };

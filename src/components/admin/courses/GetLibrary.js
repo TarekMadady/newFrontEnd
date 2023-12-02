@@ -28,28 +28,27 @@ const GetLibrary = ({ id }) => {
       <table className="table table-hover my-0">
         <thead>
           <tr>
-            <th> الاسم </th> <th> الرابط </th> <th> الشرح </th> <th> حذف </th>{" "}
-          </tr>{" "}
-        </thead>{" "}
+            <th> الاسم </th> <th> الرابط </th> <th> الشرح </th> <th> حذف </th>
+          </tr>
+        </thead>
         <tbody>
-          {" "}
           {lib &&
             lib.map((lb) => (
               <tr key={lb.id}>
-                <td> {lb.title} </td>{" "}
+                <td> {lb.title} </td>
                 <td>
                   <Link target="_blank" to={lb.url}>
-                    الرابط{" "}
-                  </Link>{" "}
-                </td>{" "}
-                <td> {lb.desc} </td>{" "}
+                    الرابط
+                  </Link>
+                </td>
+                <td> {lb.desc} </td>
                 <td>
-                  <Link to={`/admin/library/delete/${lb.id}`}> حذف </Link>{" "}
-                </td>{" "}
+                  <Link to={`/admin/library/delete/${lb.id}`}> حذف </Link>
+                </td>
               </tr>
-            ))}{" "}
-        </tbody>{" "}
-      </table>{" "}
+            ))}
+        </tbody>
+      </table>
     </div>
   );
 };

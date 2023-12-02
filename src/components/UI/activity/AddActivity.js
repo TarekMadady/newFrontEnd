@@ -34,13 +34,13 @@ const AddActivity = (props) => {
     <form onSubmit={addActive}>
       <div className="mb-3">
         <label className="form-label" htmlFor="actitle">
-          النشاط{" "}
-        </label>{" "}
-        <input type="text" id="actitle" className="form-control" ref={atitle} />{" "}
-      </div>{" "}
+          النشاط
+        </label>
+        <input type="text" id="actitle" className="form-control" ref={atitle} />
+      </div>
       <button type="submit" className="btn btn-primary">
-        اضافة النشاط{" "}
-      </button>{" "}
+        اضافة النشاط
+      </button>
     </form>
   );
 };

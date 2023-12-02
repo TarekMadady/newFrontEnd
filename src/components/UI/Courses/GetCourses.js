@@ -33,17 +33,16 @@ const GetCourses = (props) => {
         aria-label="Default select example"
         onChange={changevalue}
       >
-        <option value="0"> اختر كورس </option>{" "}
+        <option value="0"> اختر كورس </option>
         {course.length === 0 ? (
           <option> مفيش كورسات </option>
         ) : (
           course.map((co) => (
             <option key={co._id} value={co._id}>
-              {" "}
-              {co.coursename}{" "}
+              {co.coursename}
             </option>
           ))
-        )}{" "}
+        )}
       </select>
     </>
   );

@@ -22,7 +22,6 @@ const Courses = () => {
   };
   return (
     <>
-      {" "}
       {course.map((cour) => (
         <CoursCard
           key={cour._id}
@@ -32,7 +31,7 @@ const Courses = () => {
           video={cour.coursevideoes.length}
           id={cour._id}
         />
-      ))}{" "}
+      ))}
     </>
   );
 };

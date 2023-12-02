@@ -31,9 +31,8 @@ const Libraries = ({ lid }) => {
         to={libdata && libdata.urlLink}
         className="fs-2 fw-bold my-2"
       >
-        {" "}
-        {libdata && libdata.title}{" "}
-      </Link>{" "}
+        {libdata && libdata.title}
+      </Link>
       <br />
       <hr />
     </>

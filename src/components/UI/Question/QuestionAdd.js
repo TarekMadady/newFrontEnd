@@ -59,23 +59,23 @@ const QuestionAdd = (props) => {
   return (
     <>
       <form onSubmit={submitQuestionForm}>
-        <div className="mb-3"> {/* <GetExam examID={examID} /> */} </div>{" "}
+        <div className="mb-3"> {/* <GetExam examID={examID} /> */} </div>
         <div className="mb-3">
           <label className="form-label" htmlFor="questTitle">
-            السؤال{" "}
-          </label>{" "}
+            السؤال
+          </label>
           <input
             type="text"
             className="form-control"
             id="questTitle"
             ref={Qtitle}
-          />{" "}
-        </div>{" "}
+          />
+        </div>
         <div className="mb-3">
           <label className="form-label" htmlFor="qimage">
-            صورة للسؤال{" "}
-          </label>{" "}
-          <input type="file" ref={inputRef} onChange={HandleImageChange} />{" "}
+            صورة للسؤال
+          </label>
+          <input type="file" ref={inputRef} onChange={HandleImageChange} />
           {image ? (
             <img
               src={URL.createObjectURL(image)}
@@ -88,36 +88,36 @@ const QuestionAdd = (props) => {
             />
           ) : (
             <img src="" alt="" />
-          )}{" "}
-        </div>{" "}
+          )}
+        </div>
         <div className="mb-3">
           <label className="form-label" htmlFor="questType">
-            نوع الاجابة{" "}
-          </label>{" "}
+            نوع الاجابة
+          </label>
           <select className="form-control" id="questType" ref={Qtype}>
-            <option value="0"> اختر نوع الجابة </option>{" "}
-            <option value="single"> Single </option>{" "}
-            <option value="multiChoice"> Multi choice </option>{" "}
-          </select>{" "}
-        </div>{" "}
+            <option value="0"> اختر نوع الجابة </option>
+            <option value="single"> Single </option>
+            <option value="multiChoice"> Multi choice </option>
+          </select>
+        </div>
         <div className="mb-3">
           <label className="form-label" htmlFor="questDegree">
-            درجة السؤال{" "}
-          </label>{" "}
+            درجة السؤال
+          </label>
           <input
             type="number"
             id="questDegree"
             className="form-control"
             ref={qDegree}
-          />{" "}
-        </div>{" "}
+          />
+        </div>
         <div className="mb-3">
-          <GetVideo vid={videoid} />{" "}
-        </div>{" "}
+          <GetVideo vid={videoid} />
+        </div>
         <button type="submit" className="btn btn-success">
-          اضافةالسؤال{" "}
-        </button>{" "}
-      </form>{" "}
+          اضافةالسؤال
+        </button>
+      </form>
     </>
   );
 };

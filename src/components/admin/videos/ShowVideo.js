@@ -25,20 +25,19 @@ const ShowVideo = (props) => {
         <div className="card">
           <div className="card-header">
             <h5 className="card-title mb-0">
-              {" "}
-              {videoData && videoData.videoTitle}{" "}
-            </h5>{" "}
-          </div>{" "}
+              {videoData && videoData.videoTitle}
+            </h5>
+          </div>
           <div className="card-body">
             <video controls className="w-100">
               <source
                 src={`http://api.motiongraphic.tech/admin/video/show/${props.id}`}
                 type="video/mp4"
               />
-            </video>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

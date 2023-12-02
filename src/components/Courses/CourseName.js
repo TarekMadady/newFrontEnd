@@ -25,12 +25,12 @@ const CourseName = ({ vid }) => {
     <div className="row  w-100">
       <div className="d-flex justify-content-between">
         <div>
-          <h5 className="h2"> {myV && myV.videoTitle} </h5>{" "}
-        </div>{" "}
+          <h5 className="h2"> {myV && myV.videoTitle} </h5>
+        </div>
         <div>
-          <h5 className="h2"> {myV && myV.videoLength} </h5>{" "}
-        </div>{" "}
-      </div>{" "}
+          <h5 className="h2"> {myV && myV.videoLength} </h5>
+        </div>
+      </div>
     </div>
   );
 };

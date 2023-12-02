@@ -24,7 +24,6 @@ const Libraryes = () => {
 
   return (
     <div className="d-fex">
-      {" "}
       {lib.length > 0 ? (
         lib.map((lp) => (
           <LibraryCard
@@ -37,7 +36,7 @@ const Libraryes = () => {
         ))
       ) : (
         <div> No Library </div>
-      )}{" "}
+      )}
     </div>
   );
 };

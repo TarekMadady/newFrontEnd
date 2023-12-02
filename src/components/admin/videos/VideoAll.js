@@ -22,7 +22,6 @@ const VideoAll = () => {
   };
   return (
     <>
-      {" "}
       {videos.length > 0 ? (
         videos.map((vido) => (
           <VideoCard
@@ -35,7 +34,7 @@ const VideoAll = () => {
         ))
       ) : (
         <div> No Video </div>
-      )}{" "}
+      )}
     </>
   );
 };

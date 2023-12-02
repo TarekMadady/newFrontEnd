@@ -28,20 +28,19 @@ const ActiveCount = ({ cid }) => {
     <div className="container">
       <div className="row">
         <div className="col-6">
-          {" "}
           {actd &&
             actd.map((C, indx) => (
               <ActivCard key={indx} nu={indx + 1} acid={C.activity} />
-            ))}{" "}
-        </div>{" "}
+            ))}
+        </div>
         <div className="col-6">
           <img
             src="/images/Track_1.gif"
             alt="insta"
             className="image-fluid w-100"
           />
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
     </div>
   );
 };

@@ -22,10 +22,9 @@ const Questions = (props) => {
   };
   return (
     <>
-      {" "}
       {questions.length === 0 ? (
         <div className="alert alert-success" role="alert">
-          No Question{" "}
+          No Question
         </div>
       ) : (
         questions.map((question, idx) => (
@@ -38,7 +37,7 @@ const Questions = (props) => {
             id={question.id}
           />
         ))
-      )}{" "}
+      )}
     </>
   );
 };

@@ -31,18 +31,18 @@ const ForgetPassword = () => {
   return (
     <form onSubmit={forgetHandle}>
       <div className="mb-3">
-        <label htmlFor="userEmail"> Email </label>{" "}
+        <label htmlFor="userEmail"> Email </label>
         <input
           type="email"
           className="form-control"
           id="userEmail"
           placeholder="Enter Your Mail"
           ref={useEmail}
-        />{" "}
-      </div>{" "}
+        />
+      </div>
       <button type="submit" className="btn btn-primary w-100">
-        Signin{" "}
-      </button>{" "}
+        Signin
+      </button>
     </form>
   );
 };

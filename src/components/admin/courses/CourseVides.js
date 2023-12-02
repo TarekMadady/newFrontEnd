@@ -22,9 +22,7 @@ const CourseVideoes = ({ id }) => {
   }, []);
   return (
     <>
-      {" "}
-      {videos &&
-        videos.map((v, idx) => <VideoData key={idx} vid={v.video} />)}{" "}
+      {videos && videos.map((v, idx) => <VideoData key={idx} vid={v.video} />)}
     </>
   );
 };

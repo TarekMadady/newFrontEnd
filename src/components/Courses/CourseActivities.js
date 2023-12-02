@@ -23,9 +23,8 @@ const MCourseActive = ({ Actid }) => {
   }, []);
   return (
     <Link className="" to={`/addajective/${myAdj && myAdj._id}`}>
-      {" "}
       {myAdj && myAdj.title}
-      hh{" "}
+      hh
     </Link>
   );
 };
