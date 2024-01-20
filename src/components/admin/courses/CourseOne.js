@@ -22,7 +22,7 @@ const CourseOne = () => {
 
   const myData = async () => {
     const response = await fetch(
-      `http://api.motiongraphic.tech/admin/course/details/${cid}`,
+      `https://api.motiongraphic.tech/admin/course/details/${cid}`,
       {
         method: "GET",
         headers: {

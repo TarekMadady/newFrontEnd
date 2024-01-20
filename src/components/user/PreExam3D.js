@@ -15,7 +15,7 @@ const PreExam3D = () => {
 
   const GetData = async () => {
     const response = await fetch(
-      "http://api.motiongraphic.tech/exam/preexam3d",
+      "https://api.motiongraphic.tech/exam/preexam3d",
       {
         method: "Get",
         headers: {

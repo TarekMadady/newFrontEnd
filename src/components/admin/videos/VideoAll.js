@@ -9,7 +9,7 @@ const VideoAll = () => {
   }, []);
   const getAllVideo = async () => {
     const respons = await fetch(
-      "http://api.motiongraphic.tech/admin/video/all",
+      "https://api.motiongraphic.tech/admin/video/all",
       {
         method: "GET",
         headers: {

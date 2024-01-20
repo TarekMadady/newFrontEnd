@@ -11,7 +11,7 @@ const DeleteActiv = () => {
   }, []);
   const removeActive = async () => {
     const respon = await fetch(
-      `http://api.motiongraphic.tech/admin/activity/${actid}`,
+      `https://api.motiongraphic.tech/admin/activity/${actid}`,
       {
         method: "DELETE",
         headers: {

@@ -6,7 +6,7 @@ const LibCount = ({ cid }) => {
   const [mlib, setMlib] = useState();
   const myData = async () => {
     const response = await fetch(
-      `http://api.motiongraphic.tech/course/${cid}`,
+      `https://api.motiongraphic.tech/course/${cid}`,
       {
         method: "GET",
         headers: {

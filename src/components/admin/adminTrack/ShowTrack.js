@@ -8,7 +8,7 @@ const ShowTrack = () => {
   const [allTrack, setAllTrack] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      "http://api.motiongraphic.tech/admin/track/all",
+      "https://api.motiongraphic.tech/admin/track/all",
       {
         method: "GET",
         headers: {

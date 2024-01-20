@@ -6,7 +6,7 @@ const VideoData = (props) => {
   const [videoData, setVideoData] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `http://api.motiongraphic.tech/admin/video/details/${props.vid}`,
+      `https://api.motiongraphic.tech/admin/video/details/${props.vid}`,
       {
         method: "GET",
         headers: {

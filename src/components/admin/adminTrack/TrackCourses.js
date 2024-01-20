@@ -6,7 +6,7 @@ const TrackCourses = (props) => {
   const [course, setCourse] = useState([]);
   const getData = async () => {
     const response = await fetch(
-      `http://api.motiongraphic.tech/admin/course/all/${props.trackid}`,
+      `https://api.motiongraphic.tech/admin/course/all/${props.trackid}`,
       {
         method: "GET",
         headers: {

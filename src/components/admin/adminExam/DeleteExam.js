@@ -8,7 +8,7 @@ const DeleteExam = (props) => {
 
   const deldata = async () => {
     const response = await fetch(
-      `http://api.motiongraphic.tech/admin/exam/${examid}`,
+      `https://api.motiongraphic.tech/admin/exam/${examid}`,
       {
         method: "DELETE",
         headers: {

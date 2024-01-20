@@ -5,7 +5,7 @@ const CourseActiv = ({ id }) => {
   const [act, setAct] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `http://api.motiongraphic.tech/admin/activity/all/${id}`,
+      `https://api.motiongraphic.tech/admin/activity/all/${id}`,
       {
         method: "GET",
         headers: {

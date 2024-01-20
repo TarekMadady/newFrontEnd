@@ -17,7 +17,7 @@ const ExamCreate = () => {
       examSucessPersent: sucPersnet.current.value,
       examQuestionCount: exQCount.current.value,
     };
-    fetch("http://api.motiongraphic.tech/admin/exam/create", {
+    fetch("https://api.motiongraphic.tech/admin/exam/create", {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {
