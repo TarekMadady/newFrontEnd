@@ -5,7 +5,7 @@ const Courses = () => {
   const [cours, setCours] = useState();
   const myData = async () => {
     const response = await fetch(
-      "https://api.motiongraphic.tech/track/allfree",
+      "http://34.41.175.203/track/allfree",
       {
         method: "GET",
       }

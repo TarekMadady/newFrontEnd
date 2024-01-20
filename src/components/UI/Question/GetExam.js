@@ -9,7 +9,7 @@ const GetExam = (props) => {
   }, []);
   const examData = async () => {
     const response = await fetch(
-      "https://api.motiongraphic.tech/admin/exam/all",
+      "http://34.41.175.203/admin/exam/all",
       {
         method: "GET",
         headers: {

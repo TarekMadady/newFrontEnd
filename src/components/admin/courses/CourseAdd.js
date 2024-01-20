@@ -57,7 +57,7 @@ const CourseAdd = (props) => {
       instruction: instruc,
       target: target,
     };
-    fetch(`https://api.motiongraphic.tech/admin/course/add/${props.trac}`, {
+    fetch(`http://34.41.175.203/admin/course/add/${props.trac}`, {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

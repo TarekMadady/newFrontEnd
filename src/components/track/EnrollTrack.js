@@ -8,7 +8,7 @@ const EnrollTrack = () => {
   const { trackid } = params;
   const enroll = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/track/enroll/${trackid}`,
+      `http://34.41.175.203/track/enroll/${trackid}`,
       {
         method: "POST",
         headers: {

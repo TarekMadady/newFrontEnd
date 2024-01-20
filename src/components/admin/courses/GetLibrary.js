@@ -7,7 +7,7 @@ const GetLibrary = ({ id }) => {
   const [lib, setLib] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/admin/library/all/${id}`,
+      `http://34.41.175.203/admin/library/all/${id}`,
       {
         method: "GET",
         headers: {

@@ -8,7 +8,7 @@ const StudentAll = () => {
   }, []);
   const Search = async () => {
     const response = await fetch(
-      "https://api.motiongraphic.tech/admin/student/all",
+      "http://34.41.175.203/admin/student/all",
       {
         method: "GET",
         headers: {

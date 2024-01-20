@@ -9,7 +9,7 @@ const StudentDetail = (props) => {
   }, []);
   const Search = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/admin/student/${props.parm}`,
+      `http://34.41.175.203/admin/student/${props.parm}`,
       {
         method: "GET",
         headers: {

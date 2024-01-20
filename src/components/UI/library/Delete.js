@@ -11,7 +11,7 @@ const Delete = () => {
   }, []);
   const Dele = async () => {
     const repon = await fetch(
-      `https://api.motiongraphic.tech/admin/library/${libid}`,
+      `http://34.41.175.203/admin/library/${libid}`,
       {
         method: "DELETE",
         headers: {

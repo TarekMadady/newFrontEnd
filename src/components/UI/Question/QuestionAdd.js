@@ -38,7 +38,7 @@ const QuestionAdd = (props) => {
     formData.append("degree", qDegree.current.value);
     formData.append("video", vide);
 
-    fetch(`https://api.motiongraphic.tech/admin/question/add/${props.exid}`, {
+    fetch(`http://34.41.175.203/admin/question/add/${props.exid}`, {
       method: "POST",
       body: formData,
       headers: {

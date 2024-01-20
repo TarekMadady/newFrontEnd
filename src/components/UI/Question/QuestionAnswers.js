@@ -9,7 +9,7 @@ const QuestionAnswers = (props) => {
 
   const getAnswers = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/admin/question/answer/${props.qid}`,
+      `http://34.41.175.203/admin/question/answer/${props.qid}`,
       {
         method: "GET",
         headers: {

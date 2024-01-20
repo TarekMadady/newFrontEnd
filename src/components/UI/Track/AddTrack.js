@@ -15,7 +15,7 @@ const AddTrack = () => {
       tags: typeoftrack.current.value,
     };
 
-    fetch("https://api.motiongraphic.tech/admin/track/add", {
+    fetch("http://34.41.175.203/admin/track/add", {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

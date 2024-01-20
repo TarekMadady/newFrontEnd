@@ -9,7 +9,7 @@ const UserFirstTime = () => {
   }, []);
   const getuser = async () => {
     const respon = await fetch(
-      "https://api.motiongraphic.tech/user/getfirst",
+      "http://34.41.175.203/user/getfirst",
       {
         method: "GET",
         headers: {

@@ -10,7 +10,7 @@ const RecoverPassword = (props) => {
     const sendData = {
       password: userPass,
     };
-    fetch(`https://api.motiongraphic.tech/auth/recoverpassword/${props.parm}`, {
+    fetch(`http://34.41.175.203/auth/recoverpassword/${props.parm}`, {
       method: "PATCH",
       body: JSON.stringify(sendData),
       headers: {
