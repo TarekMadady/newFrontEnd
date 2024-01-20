@@ -17,7 +17,7 @@ const ExamCreate = () => {
       examSucessPersent: sucPersnet.current.value,
       examQuestionCount: exQCount.current.value,
     };
-    fetch("http://34.41.175.203/admin/exam/create", {
+    fetch("http://34.41.175.203:8000/admin/exam/create", {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

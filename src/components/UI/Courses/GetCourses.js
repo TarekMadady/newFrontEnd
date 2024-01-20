@@ -9,7 +9,7 @@ const GetCourses = (props) => {
   }, []);
   const courseData = async () => {
     const respon = await fetch(
-      "http://34.41.175.203/admin/course/all",
+      "http://34.41.175.203:8000/admin/course/all",
       {
         method: "GET",
         headers: {

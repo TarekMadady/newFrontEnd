@@ -27,7 +27,7 @@ const CourseCard = ({ courid }) => {
 
   const myData = async () => {
     const response = await fetch(
-      `http://34.41.175.203/course/${courid}`,
+      `http://34.41.175.203:8000/course/${courid}`,
       {
         method: "GET",
         headers: {

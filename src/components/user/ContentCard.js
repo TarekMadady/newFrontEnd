@@ -9,7 +9,7 @@ const ContentCard = ({ cid, coun }) => {
   const [show, setShow] = useState(false);
   const myData = async () => {
     const response = await fetch(
-      `http://34.41.175.203/video/details/${cid}`,
+      `http://34.41.175.203:8000/video/details/${cid}`,
       {
         method: "GET",
         headers: {

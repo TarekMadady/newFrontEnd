@@ -5,7 +5,7 @@ const CourseName = ({ vid }) => {
   const [myV, setMyV] = useState();
   const myData = async () => {
     const response = await fetch(
-      `http://34.41.175.203/video/details/${vid}`,
+      `http://34.41.175.203:8000/video/details/${vid}`,
       {
         method: "GET",
         headers: {

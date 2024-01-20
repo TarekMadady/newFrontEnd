@@ -11,7 +11,7 @@ const DeleteActiv = () => {
   }, []);
   const removeActive = async () => {
     const respon = await fetch(
-      `http://34.41.175.203/admin/activity/${actid}`,
+      `http://34.41.175.203:8000/admin/activity/${actid}`,
       {
         method: "DELETE",
         headers: {

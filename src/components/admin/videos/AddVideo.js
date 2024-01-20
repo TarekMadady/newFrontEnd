@@ -19,7 +19,7 @@ const AddVideo = (props) => {
     const formData = new FormData();
     formData.append("title", title.current.value);
     formData.append("videofile", video);
-    fetch(`http://34.41.175.203/admin/video/add/${props.course}`, {
+    fetch(`http://34.41.175.203:8000/admin/video/add/${props.course}`, {
       method: "POST",
       body: formData,
       headers: {

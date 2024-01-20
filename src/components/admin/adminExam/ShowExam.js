@@ -12,7 +12,7 @@ const ShowExam = () => {
   }, []);
   const SearchExam = async () => {
     const response = await fetch(
-      "http://34.41.175.203/admin/exam/all",
+      "http://34.41.175.203:8000/admin/exam/all",
       {
         method: "GET",
         headers: {

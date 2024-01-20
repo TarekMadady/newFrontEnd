@@ -12,7 +12,7 @@ const ActivCard = ({ acid, nu }) => {
   const [showAct, setShowAct] = useState(false);
   const myData = async () => {
     const response = await fetch(
-      `http://34.41.175.203/activ/${acid}`,
+      `http://34.41.175.203:8000/activ/${acid}`,
       {
         method: "GET",
         headers: {
@@ -44,7 +44,7 @@ const ActivCard = ({ acid, nu }) => {
     event.preventDefault();
     const formData = new FormData();
     formData.append("filecompress", compFile);
-    fetch(`http://34.41.175.203/activ/${acid}`, {
+    fetch(`http://34.41.175.203:8000/activ/${acid}`, {
       method: "POST",
       body: formData,
       headers: {

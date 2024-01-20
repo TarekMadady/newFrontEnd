@@ -9,7 +9,7 @@ const AllActivities = () => {
   }, []);
   const getActiv = async () => {
     const respon = await fetch(
-      "http://34.41.175.203/admin/activity/all",
+      "http://34.41.175.203:8000/admin/activity/all",
       {
         method: "GET",
         headers: {

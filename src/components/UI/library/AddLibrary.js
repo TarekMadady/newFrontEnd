@@ -16,7 +16,7 @@ const AddLibrary = ({ id }) => {
       url: liburl.current.value,
       desc: libdesc.current.value,
     };
-    fetch(`http://34.41.175.203/admin/library/${id}`, {
+    fetch(`http://34.41.175.203:8000/admin/library/${id}`, {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

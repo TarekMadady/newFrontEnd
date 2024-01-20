@@ -18,7 +18,7 @@ const SignUpForm = () => {
       email: useremail,
       password: password,
     };
-    fetch("http://34.41.175.203/auth/signup", {
+    fetch("http://34.41.175.203:8000/auth/signup", {
       method: "POST",
       body: JSON.stringify(userData),
       headers: {

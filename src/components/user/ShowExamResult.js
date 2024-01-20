@@ -13,7 +13,7 @@ const ShowExamResult = (props) => {
 
   const getData = async () => {
     const response = await fetch(
-      `http://34.41.175.203/exam/showresult/${archive}`,
+      `http://34.41.175.203:8000/exam/showresult/${archive}`,
       {
         method: "GET",
         headers: {

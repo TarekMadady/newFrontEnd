@@ -6,7 +6,7 @@ const VideoData = (props) => {
   const [videoData, setVideoData] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `http://34.41.175.203/admin/video/details/${props.vid}`,
+      `http://34.41.175.203:8000/admin/video/details/${props.vid}`,
       {
         method: "GET",
         headers: {

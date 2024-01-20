@@ -9,7 +9,7 @@ const Libraryes = () => {
   }, []);
   const LibrAll = async () => {
     const respon = await fetch(
-      "http://34.41.175.203/admin/library/all",
+      "http://34.41.175.203:8000/admin/library/all",
       {
         method: "GET",
         headers: {
