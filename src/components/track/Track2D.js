@@ -5,7 +5,7 @@ const Track2D = () => {
   const [trackData, setTrackData] = useState([]);
   const token = localStorage.getItem("token");
   const getTrack2d = async () => {
-    const response = await fetch("http://34.41.175.203:8000/track/2d", {
+    const response = await fetch("https://api.motiongraphic.tech/track/2d", {
       method: "GET",
       headers: {
         Authorization: `${token}`,

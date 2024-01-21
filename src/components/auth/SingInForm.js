@@ -13,7 +13,7 @@ const SignInForm = () => {
       email: userEmail,
       password: userPass,
     };
-    fetch("http://34.41.175.203:8000/auth/signin", {
+    fetch("https://api.motiongraphic.tech/auth/signin", {
       method: "POST",
       body: JSON.stringify(sendData),
       headers: {

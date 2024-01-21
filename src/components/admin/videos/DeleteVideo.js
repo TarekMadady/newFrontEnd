@@ -10,7 +10,7 @@ const DeleteVideo = () => {
   }, []);
   const Del = async () => {
     const respon = await fetch(
-      `http://34.41.175.203:8000/admin/video/${vid}`,
+      `https://api.motiongraphic.tech/admin/video/${vid}`,
       {
         method: "DELETE",
         headers: {

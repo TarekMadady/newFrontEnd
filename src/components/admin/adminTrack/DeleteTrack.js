@@ -9,7 +9,7 @@ const DeleteTrack = (props) => {
   }, []);
   const Delete = async () => {
     const respons = await fetch(
-      `http://34.41.175.203:8000/admin/track/${props.id}`,
+      `https://api.motiongraphic.tech/admin/track/${props.id}`,
       {
         method: "DELETE",
         headers: {

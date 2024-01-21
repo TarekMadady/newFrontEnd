@@ -7,7 +7,7 @@ const UserOneTrack = ({ trackid }) => {
   const [tra, setTra] = useState();
   const myData = async () => {
     const response = await fetch(
-      `http://34.41.175.203:8000/track/details/${trackid}`,
+      `https://api.motiongraphic.tech/track/details/${trackid}`,
       {
         method: "GET",
         headers: {

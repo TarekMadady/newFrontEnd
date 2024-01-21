@@ -11,7 +11,7 @@ const ForgetPassword = () => {
     const Data = {
       email: usermail,
     };
-    fetch("http://34.41.175.203:8000/auth/forgetpassword", {
+    fetch("https://api.motiongraphic.tech/auth/forgetpassword", {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

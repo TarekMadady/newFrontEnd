@@ -9,7 +9,7 @@ const DeleteQuestion = (props) => {
   }, []);
   const dele = async () => {
     const respons = await fetch(
-      `http://34.41.175.203:8000/admin/question/${props.parm}`,
+      `https://api.motiongraphic.tech/admin/question/${props.parm}`,
       {
         method: "DELETE",
         headers: {

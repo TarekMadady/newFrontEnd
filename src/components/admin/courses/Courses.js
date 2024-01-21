@@ -9,7 +9,7 @@ const Courses = () => {
   }, []);
   const getAllCourse = async () => {
     const response = await fetch(
-      "http://34.41.175.203:8000/admin/course/all",
+      "https://api.motiongraphic.tech/admin/course/all",
       {
         method: "GET",
         headers: {

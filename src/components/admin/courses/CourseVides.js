@@ -6,7 +6,7 @@ const CourseVideoes = ({ id }) => {
   const [videos, setVideos] = useState([]);
   const myData = async () => {
     const response = await fetch(
-      `http://34.41.175.203:8000/admin/course/details/${id}`,
+      `https://api.motiongraphic.tech/admin/course/details/${id}`,
       {
         method: "GET",
         headers: {

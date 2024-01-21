@@ -9,7 +9,7 @@ const Trackes = (props) => {
   }, []);
   const getData = async () => {
     const respons = await fetch(
-      "http://34.41.175.203:8000/admin/track/all",
+      "https://api.motiongraphic.tech/admin/track/all",
       {
         method: "GET",
         headers: {

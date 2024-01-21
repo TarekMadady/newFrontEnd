@@ -7,7 +7,7 @@ const ActiveCount = ({ cid }) => {
   const [actd, setActd] = useState();
   const myData = async () => {
     const response = await fetch(
-      `http://34.41.175.203:8000/course/${cid}`,
+      `https://api.motiongraphic.tech/course/${cid}`,
       {
         method: "GET",
         headers: {
