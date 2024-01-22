@@ -27,7 +27,7 @@ const CourseCard = ({ courid }) => {
 
   const myData = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/course/${courid}`,
+      `https://tutorial.tarekmadady.com/course/${courid}`,
       {
         method: "GET",
         headers: {

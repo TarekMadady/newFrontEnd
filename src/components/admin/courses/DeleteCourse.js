@@ -9,7 +9,7 @@ const DeleteCourse = (props) => {
   }, []);
   const Dlete = async () => {
     const respon = await fetch(
-      `https://api.motiongraphic.tech/admin/course/${props.id}`,
+      `https://tutorial.tarekmadady.com/admin/course/${props.id}`,
       {
         method: "DELETE",
         headers: {

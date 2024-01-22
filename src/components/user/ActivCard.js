@@ -12,7 +12,7 @@ const ActivCard = ({ acid, nu }) => {
   const [showAct, setShowAct] = useState(false);
   const myData = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/activ/${acid}`,
+      `https://tutorial.tarekmadady.com/activ/${acid}`,
       {
         method: "GET",
         headers: {
@@ -44,7 +44,7 @@ const ActivCard = ({ acid, nu }) => {
     event.preventDefault();
     const formData = new FormData();
     formData.append("filecompress", compFile);
-    fetch(`https://api.motiongraphic.tech/activ/${acid}`, {
+    fetch(`https://tutorial.tarekmadady.com/activ/${acid}`, {
       method: "POST",
       body: formData,
       headers: {

@@ -7,7 +7,7 @@ const MCourseActive = ({ Actid }) => {
   const [myAdj, setMyAdj] = useState();
   const myData = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/activ/${Actid}`,
+      `https://tutorial.tarekmadady.com/activ/${Actid}`,
       {
         method: "GET",
         headers: {

@@ -13,7 +13,7 @@ const AddActivity = (props) => {
     const Data = {
       title: atitle.current.value,
     };
-    fetch(`https://api.motiongraphic.tech/admin/activity/add/${props.id}`, {
+    fetch(`https://tutorial.tarekmadady.com/admin/activity/add/${props.id}`, {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

@@ -8,7 +8,7 @@ const EnrollTrack = () => {
   const { trackid } = params;
   const enroll = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/track/enroll/${trackid}`,
+      `https://tutorial.tarekmadady.com/track/enroll/${trackid}`,
       {
         method: "POST",
         headers: {

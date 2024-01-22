@@ -5,7 +5,7 @@ const DeactiveExam = (props) => {
   let navigate = useNavigate();
   const examid = props.parm;
   const token = localStorage.getItem("token");
-  fetch(`https://api.motiongraphic.tech/admin/exam/deactive/${examid}`, {
+  fetch(`https://tutorial.tarekmadady.com/admin/exam/deactive/${examid}`, {
     method: "PATCH",
     headers: {
       Authorization: `${token}`,

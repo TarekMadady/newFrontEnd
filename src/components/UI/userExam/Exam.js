@@ -91,7 +91,7 @@ const Exam = ({
     const Data = questions;
 
     const Dsen = await fetch(
-      `https://api.motiongraphic.tech/exam/examresult/${examid}`,
+      `https://tutorial.tarekmadady.com/exam/examresult/${examid}`,
       {
         method: "post",
         body: JSON.stringify(Arr),

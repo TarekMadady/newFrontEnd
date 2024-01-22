@@ -9,7 +9,7 @@ const GetExam = (props) => {
   }, []);
   const examData = async () => {
     const response = await fetch(
-      "https://api.motiongraphic.tech/admin/exam/all",
+      "https://tutorial.tarekmadady.com/admin/exam/all",
       {
         method: "GET",
         headers: {

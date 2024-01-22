@@ -7,7 +7,7 @@ const Libraries = ({ lid }) => {
   console.log(lid);
   const myData = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/library/${lid}`,
+      `https://tutorial.tarekmadady.com/library/${lid}`,
       {
         method: "GET",
         headers: {

@@ -19,7 +19,7 @@ const AddVideo = (props) => {
     const formData = new FormData();
     formData.append("title", title.current.value);
     formData.append("videofile", video);
-    fetch(`https://api.motiongraphic.tech/admin/video/add/${props.course}`, {
+    fetch(`https://tutorial.tarekmadady.com/admin/video/add/${props.course}`, {
       method: "POST",
       body: formData,
       headers: {

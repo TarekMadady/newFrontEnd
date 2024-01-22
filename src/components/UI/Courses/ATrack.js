@@ -9,7 +9,7 @@ const ATrack = (props) => {
   }, []);
   const search = async () => {
     const respons = await fetch(
-      "https://api.motiongraphic.tech/admin/track/all",
+      "https://tutorial.tarekmadady.com/admin/track/all",
       {
         method: "GET",
         headers: {

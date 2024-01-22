@@ -7,7 +7,7 @@ const UserTrack = () => {
 
   const myData = async () => {
     const response = await fetch(
-      "https://api.motiongraphic.tech/track/usertrack",
+      "https://tutorial.tarekmadady.com/track/usertrack",
       {
         method: "GET",
         headers: {

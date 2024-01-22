@@ -9,7 +9,7 @@ const Questions = (props) => {
   }, []);
   const questionData = async () => {
     const respon = await fetch(
-      `https://api.motiongraphic.tech/admin/questions/${props.exid}`,
+      `https://tutorial.tarekmadady.com/admin/questions/${props.exid}`,
       {
         method: "GET",
         headers: {

@@ -10,7 +10,7 @@ const TrackCard = (props) => {
 
   function enrolCour() {
     // const courid = props.id;
-    fetch(`https://api.motiongraphic.tech/track/enroll/${props.id}`, {
+    fetch(`https://tutorial.tarekmadady.com/track/enroll/${props.id}`, {
       method: "POST",
       headers: {
         Authorization: `${token}`,

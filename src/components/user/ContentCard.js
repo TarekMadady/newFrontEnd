@@ -9,7 +9,7 @@ const ContentCard = ({ cid, coun }) => {
   const [show, setShow] = useState(false);
   const myData = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/video/details/${cid}`,
+      `https://tutorial.tarekmadady.com/video/details/${cid}`,
       {
         method: "GET",
         headers: {

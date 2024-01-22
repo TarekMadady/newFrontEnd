@@ -16,7 +16,7 @@ const AddLibrary = ({ id }) => {
       url: liburl.current.value,
       desc: libdesc.current.value,
     };
-    fetch(`https://api.motiongraphic.tech/admin/library/${id}`, {
+    fetch(`https://tutorial.tarekmadady.com/admin/library/${id}`, {
       method: "POST",
       body: JSON.stringify(Data),
       headers: {

@@ -25,7 +25,7 @@ const AnswerToAdd = (props) => {
     formData.append("degree", AnsDegree.current.value);
     formData.append("result", AnsResult.current.checked);
     // console.log(AnsResult.current.checked);
-    fetch(`https://api.motiongraphic.tech/admin/answer/add/${props.id}`, {
+    fetch(`https://tutorial.tarekmadady.com/admin/answer/add/${props.id}`, {
       method: "POST",
       body: formData,
       headers: {

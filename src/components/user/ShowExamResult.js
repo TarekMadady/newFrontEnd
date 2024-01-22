@@ -13,7 +13,7 @@ const ShowExamResult = (props) => {
 
   const getData = async () => {
     const response = await fetch(
-      `https://api.motiongraphic.tech/exam/showresult/${archive}`,
+      `https://tutorial.tarekmadady.com/exam/showresult/${archive}`,
       {
         method: "GET",
         headers: {

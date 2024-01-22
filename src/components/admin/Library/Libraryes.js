@@ -9,7 +9,7 @@ const Libraryes = () => {
   }, []);
   const LibrAll = async () => {
     const respon = await fetch(
-      "https://api.motiongraphic.tech/admin/library/all",
+      "https://tutorial.tarekmadady.com/admin/library/all",
       {
         method: "GET",
         headers: {

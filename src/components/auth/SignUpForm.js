@@ -18,7 +18,7 @@ const SignUpForm = () => {
       email: useremail,
       password: password,
     };
-    fetch("https://api.motiongraphic.tech/auth/signup", {
+    fetch("https://tutorial.tarekmadady.com/auth/signup", {
       method: "POST",
       body: JSON.stringify(userData),
       headers: {
